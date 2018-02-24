@@ -1,9 +1,88 @@
+<!--
+Document Name: index.html
+Author Name: Varun Setia
+Created On: 24-Feb-2018
+Updated On: 24-Feb-2018
+Description: Portfolio Page Single Pager Application
+Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
+-->
 <!Doctype html>
-<html lang="en"/>
+<html lang="en">
 <head>
-    <title>Varun Setia</title>
+    <title>Varun Setia | Portfolio Website</title>
+    <!--Header Imports-->
+    <link rel="stylesheet" href="assets/bs4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/main.css" />
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <!--Header Imports Ends Here-->
 </head>
 <body>
+    <!--Document Body Starts Here-->
+    <div id="master-container">
+        <!--Navigation Bar-->
+        <div id="master-navigation">
+            <ul>
+                <li>
+                    <a href="#"><span class="nav-first-letter">A</span>bout</a>
+                </li>
+                <li>
+                    <a id="projects" href="#"><span class="nav-first-letter">P</span>rojects</a>
+                </li>
+                <li>
+                    <a href="#"><span class="nav-first-letter">C</span>onnect</a>
+                </li>
+            </ul>
+        </div>
+        <!--Navigation Bar Ends Here-->
 
+        <!--Content Body-->
+        <div class="container">
+            <h1>Full Stack Developer / UI and UX</h1>
+            <h2>VARUN SETIA</h2>
+            <h3>Active Technology Area: Dot Net Framework (C#)</h3>
+            
+        </div>
+        <div id="project-container">
+            <div><a class="link-close" href="#">Close</a></div>
+            <div class="container">
+                <h2>Projects</h2>
+                <div id="git-projects-available">
+
+                </div>
+            </div>
+        </div>
+        <!--Content Body Ends Here-->
+    </div>
+    <!--Document Body Ends Here-->
+
+    <!--Footer Imports-->
+    <script src="assets/bs4/js/bootstrap.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script>
+        $.ajax({
+            url: 'https://api.github.com/users/VARUN46/repos',
+            type: 'GET',
+            success: function (response) {
+                var responseRepos = '<h2>GitHub Repositories Available: '+response.length+'<h2>';
+
+                for (r = 0; r < response.length; r++) {
+                    responseRepos += '<h3>' + response[r].name + '<h3><h5>' + response[r].description + '</h5><p><a href="' + response[r].html_url+'">Source Code Access Link</a></p>';
+                }
+
+                $("#git-projects-available").html(responseRepos);
+                console.log(response);
+            }
+        });
+        
+        $(".link-close").click(function () {
+            $(this).parent().parent().css({ 'display': 'none' });
+        });
+
+        $("#projects").click(function () {
+            $("#project-container").css({ 'display': 'block' });
+        });
+
+    </script>
+    <!--Footer Imports Ends Here-->
 </body>
 </html>
