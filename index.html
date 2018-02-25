@@ -2,7 +2,7 @@
 Document Name: index.html
 Author Name: Varun Setia
 Created On: 24-Feb-2018
-Updated On: 24-Feb-2018
+Updated On: 25-Feb-2018
 Description: Portfolio Page Single Pager Application
 Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
 -->
@@ -15,6 +15,41 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
     <link rel="stylesheet" href="assets/main.css" />
     <script src="assets/jquery-3.3.1.min.js"></script>
     <!--Header Imports Ends Here-->
+    <!--Google charts library Import-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Google Charts library Implementation-->
+    <script type="text/javascript">
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            // Define the chart to be drawn.
+            var data = google.visualization.arrayToDataTable([
+                ['Name', 'Skill', { role: 'style' }],
+                ['HTML', 9, '#F44336'],
+                ['CSS', 9, '#E91E63'],
+                ['Javascript', 8, '#9C27B0'],
+                ['JQuery', 7, '#673AB7'],
+                ['Angular JS', 6, '#3F51B5'],
+                ['Java', 7, '#2196F3'],
+                ['.NET FW(C#)', 7, '#03A9F4'],
+                ['PHP', 6, '#00BCD4'],
+                ['MySQL', 8, '#009688'],
+                ['MS SQL', 7, '#4CAF50'],
+            ]);
+            var options = {
+                title: "Skills Rating Out of 10",
+                width: 500,
+                height: 500,
+                bar: { groupWidth: "80%" },
+                legend: { position: "none" },
+            };
+            // Instantiate and draw the chart.
+            var chart = new google.visualization.BarChart(document.getElementById('about-skills-data'));
+            chart.draw(data, options);
+        }
+    </script>
+    <!--Google Charts Ends Here-->
 </head>
 <body>
     <!--Document Body Starts Here-->
@@ -23,7 +58,7 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
         <div id="master-navigation">
             <ul>
                 <li>
-                    <a href="#"><span class="nav-first-letter">A</span>bout</a>
+                    <a id="about" href="#"><span class="nav-first-letter">A</span>bout</a>
                 </li>
                 <li>
                     <a id="projects" href="#"><span class="nav-first-letter">P</span>rojects</a>
@@ -62,6 +97,15 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
                </ul>
             </div>
         </div>
+        <div id="about-container">
+            <div><a class="link-close" href="#">Close</a></div>
+            <div class="container">
+            <h2>Skills</h2>
+                <div id="about-skills-data"></div>
+            </div>
+        </div>
+
+
         <!--Content Body Ends Here-->
     </div>
     <!--Document Body Ends Here-->
@@ -94,6 +138,9 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
         });
         $("#connect").click(function () {
             $("#connect-container").css({ 'display': 'block' });
+        });
+        $("#about").click(function () {
+            $("#about-container").css({ 'display': 'block' });
         });
     </script>
     <!--Footer Imports Ends Here-->
