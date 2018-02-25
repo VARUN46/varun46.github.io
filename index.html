@@ -29,7 +29,7 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
                     <a id="projects" href="#"><span class="nav-first-letter">P</span>rojects</a>
                 </li>
                 <li>
-                    <a href="#"><span class="nav-first-letter">C</span>onnect</a>
+                    <a id="connect" href="#"><span class="nav-first-letter">C</span>onnect</a>
                 </li>
             </ul>
         </div>
@@ -49,6 +49,17 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
                 <div id="git-projects-available">
 
                 </div>
+            </div>
+        </div>
+        <div id="connect-container">
+            <div><a class="link-close" href="#">Close</a></div>
+            <div class="container">
+                <h2>Social Connect</h2>
+               <ul>
+                   <li><a href="https://www.linkedin.com/start/view-full-profile?_ed=0_hygUWYqO1QTkAnMPDHCrtBWkdQMXDcKZA7JxkeZYhFNEcRqGDTFUZBRVbL4HnJy_&trk=ndir_viewmore"><img src="https://content.linkedin.com/content/dam/me/about/LinkedIn_Icon.jpg.original.jpg" alt="LinkedIn Logo"/> Connect on Linked</a></li>
+                   <li><a href="https://github.com/VARUN46/"><img src="https://github.com/fluidicon.png" alt="GitHub Logo" /> Connect on GitHub</a></li>
+
+               </ul>
             </div>
         </div>
         <!--Content Body Ends Here-->
@@ -81,7 +92,9 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
         $("#projects").click(function () {
             $("#project-container").css({ 'display': 'block' });
         });
-
+        $("#connect").click(function () {
+            $("#connect-container").css({ 'display': 'block' });
+        });
     </script>
     <!--Footer Imports Ends Here-->
 </body>
