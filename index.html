@@ -58,13 +58,13 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
         <div id="master-navigation">
             <ul>
                 <li>
-                    <a id="about" href="#"><span class="nav-first-letter">A</span>bout</a>
+                    <a id="about" data-toggle="tooltip" data-placement="right" title="My Area Of Interest" href="#"><span class="nav-first-letter">A</span>bout</a>
                 </li>
                 <li>
-                    <a id="projects" href="#"><span class="nav-first-letter">P</span>rojects</a>
+                    <a data-toggle="tooltip" data-placement="right" title="My Work" id="projects" href="#"><span class="nav-first-letter">P</span>rojects</a>
                 </li>
                 <li>
-                    <a id="connect" href="#"><span class="nav-first-letter">C</span>onnect</a>
+                    <a id="connect" data-toggle="tooltip" data-placement="right" title="So that we can always stay connected" href="#"><span class="nav-first-letter">C</span>onnect</a>
                 </li>
             </ul>
         </div>
@@ -111,8 +111,8 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
     <!--Document Body Ends Here-->
 
     <!--Footer Imports-->
-    <script src="assets/bs4/js/bootstrap.min.js"></script>
     <script src="assets/popper.min.js"></script>
+    <script src="assets/bs4/js/bootstrap.min.js"></script>
     <script>
         $.ajax({
             url: 'https://api.github.com/users/VARUN46/repos',
@@ -134,14 +134,28 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js )
         });
 
         $("#projects").click(function () {
+            FlushOpenPages();
             $("#project-container").css({ 'display': 'block' });
         });
         $("#connect").click(function () {
+            FlushOpenPages();
             $("#connect-container").css({ 'display': 'block' });
         });
         $("#about").click(function () {
+            FlushOpenPages();
             $("#about-container").css({ 'display': 'block' });
         });
+
+        function FlushOpenPages() {
+            $("#project-container, #connect-container, #about-container").css({ 'display': 'none' });
+        }
+
+        $(document).ready(function () {
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+        });
+        
     </script>
     <!--Footer Imports Ends Here-->
 </body>
