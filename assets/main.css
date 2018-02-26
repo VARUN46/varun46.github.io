@@ -75,23 +75,41 @@ display:none;
         letter-spacing: 0.4em;
 }
 
-@media all and (max-width:600px){
-    #home-container h1 {
-        font-size: 1.2em;
+#connect-container ul{
+    list-style:none;
+    padding:0;
+}
+
+#connect-container ul li{
+    margin-top:20px;
+}
+#connect-container ul a{
+    color:#000;
+}
+
+@media all and (max-width:600px) {
+        #home-container h1 {
+        font-size: 3em;
+        word-break:break-word;
         margin-top: 1em;
         margin-bottom: 1em;
         letter-spacing: 0.1em;
     }
-
-    h2{
-        font-size:1em;
+    #about-container h2,
+    #connect-container h2,
+    #project-container h2 {
+        font-size: 14px;
     }
 
-    h3{
-        font-size:0.8em;
-    }
-    h5{
-        font-size:0.7em;
+        #about-container h3,
+        #connect-container h3,
+        #project-container h3 {
+            font-size: 13px;
+        }
+    #about-container h5,
+    #connect-container h5,
+    #project-container h5 {
+        font-size: 12px;
     }
 }
 
