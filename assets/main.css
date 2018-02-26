@@ -77,14 +77,14 @@ display:none;
 
 @media all and (max-width:600px){
     #home-container h1 {
-        font-size: 2em;
+        font-size: 1.2em;
         margin-top: 1em;
         margin-bottom: 1em;
         letter-spacing: 0.1em;
     }
 
     h2{
-        font-size:1.2em;
+        font-size:1em;
     }
 
     h3{
