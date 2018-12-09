@@ -79,7 +79,7 @@ Technologies Used:
 
         function GetWindow(windowName) {
             switch (windowName) {
-                
+                default:
                 case 'About':
                     LoadWindow(GetViewPath('AboutView')); 
                     break;
@@ -90,7 +90,6 @@ Technologies Used:
                 case 'Hobbies':
                     LoadWindow(GetViewPath('HobbiesView'));
                     break;
-                default:
                 case 'Contributions':
                     LoadWindow(GetViewPath('ContributionsView'));
                     break;
