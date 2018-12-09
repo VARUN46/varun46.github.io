@@ -1,0 +1,40 @@
+
+<div id="contributions" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row justify-content-around">
+            
+                <div class="card col-md-12">
+                    <div class="card-body">
+                        <h5 class="card-title">GitHub Repositories <span class="badge badge-info" id="contributions-github-count"></span></h5>
+                        <hr/>
+                        <div id="contributions-github-row" class="card-text">
+
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+                <script>
+
+                    $.ajax({
+                        url: 'https://api.github.com/users/VARUN46/repos',
+                        type: 'GET',
+                        success: function (response) {
+
+                            $("#contributions-github-count").html(response.length);
+                            var responseRepos = '';
+
+                            for (r = 0; r < response.length; r++) {
+                                responseRepos += '<h3>' + response[r].name + '</h3><h5>' + response[r].description + '</h5><p><a href="' + response[r].html_url + '">Source Code Access Link</a></p>';
+                            }
+
+                            $("#contributions-github-row").html(responseRepos);
+
+                        }
+                    });
+
+                </script>

@@ -2,9 +2,9 @@
 Document Name: index.html
 Author Name: Varun Setia
 Created On: 24-Feb-2018
-Updated On: 6-Sep-2018
+Updated On: 8-Dec-2018
 Description: Portfolio Page Single Pager Application
-Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js ), Google Charts API, Font Awesome, Wall Clock
+Technologies Used: 
 -->
 <!Doctype html>
 <html lang="en">
@@ -20,146 +20,138 @@ Technologies Used: Bootstrap v4.0 ( includes jquery 3.3.1 and popper.js ), Googl
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="assets/jquery-3.3.1.min.js"></script>
     <!--Header Imports Ends Here-->
-    <!--Google charts library Import-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <!--Google Charts library Implementation-->
-    <script type="text/javascript">
-        google.charts.load('current', { packages: ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-            // Define the chart to be drawn.
-            var data = google.visualization.arrayToDataTable([
-                ['Name', 'Skill', { role: 'style' }],
-                ['HTML', 9, '#F44336'],
-                ['CSS', 9, '#E91E63'],
-                ['Javascript', 8, '#9C27B0'],
-                ['JQuery', 7, '#673AB7'],
-                ['Bootstrap', 6, '#3F51B5'],
-                ['.NET FW(C#)', 7, '#03A9F4'],
-                ['Java', 5, '#2196F3'],
-                ['PHP', 6, '#00BCD4'],
-                ['MySQL', 8, '#009688'],
-                ['MS SQL', 7, '#4CAF50'],
-            ]);
-            var options = {
-                title: "Skills Rating Out of 10",
-                width: (window.innerWidth - 100),
-                height: 500,
-                bar: { groupWidth: "80%" },
-                legend: { position: "none" },
-            };
-            // Instantiate and draw the chart.
-            var chart = new google.visualization.BarChart(document.getElementById('skills-full-page'));
-            chart.draw(data, options);
-        }
-    </script>
-    <!--Google Charts Ends Here-->
+  
 </head>
 <body>
+    <div id="main-wrapper">
+        <div class="overlay"></div>
+        <div id="content-wrapper">
+            <h1>VARUN SETIA</h1>
+            <div id="menu">
+                <ul>
+                    <li><a data-view="About" href="#">About</a></li>
+                    <li><a data-view="Skills" href="#">Skills</a></li>
+                    <li><a data-view="Hobbies" href="#">Hobbies</a></li>
+                    <li><a data-view="Contributions" href="#">Open Source Contributions</a></li>
+                    <li><a id="contact" href="#">Contact <i class="far fa-lightbulb"></i></a></li>
+                </ul>
+            </div>
 
-    <div id="master-nav">
-        <ul>
-            <li><a id="about" href="#"><span class="big-icon"><i class="fas fa-user-alt"></i></span>About</a></li>
-            <li><a id="skills" href="#"><span class="big-icon"><i class="fab fa-superpowers"></i></span>Skills</a></li>
-            <li><a id="connect" href="#"><span class="big-icon"><i class="fas fa-comments"></i></span>Connect</a></li>
-            <li><a id="more" href="#"><span class="big-icon"><i class="fas fa-beer"></i></span>More</a></li>
-        </ul>
-    </div>
-    <div id="master-content">
-        <ul>
-            <li class="summary" id="about-summary"><span class="big-icon"><i class="fas fa-user-alt"></i></span>Hello, My name is Varun Setia. I am a <span class="first-sight">full stack developer</span>.</li>
-            <li class="summary"></li>
-            <li class="summary" id="skills-summary"><span class="big-icon"><i class="fab fa-superpowers"></i></span>ASP.Net Core Razor Pages, WPF in Dot Net Standard,Java Server Pages , jQuery, Bootstrap 4.1</li>
-            <li class="summary" id="connect-summary"><span class="big-icon"><i class="fas fa-comments"></i></span>Say Hello when you get time..</li>
-            <li class="summary"></li>
-            <li class="summary" id="more-summary"><span class="big-icon"><i class="fas fa-beer"></i> <i class="fas fa-utensils"></i></span>Foodie, Open for discussion, A Friend, etc.</li>
-        </ul>
-    </div>
-    <div id="full-page-content">
-        <div class="container-fluid">
-            <i id="close-full-page-content" class="fas fa-times-circle"></i>
+            <div id="active-window">
 
-
-            <ul>
-                <li class="full-page-contents" id="about-full-page">
-
-                </li>
-                <li class="full-page-contents" id="skills-full-page">
-
-                </li>
-
-                <li class="full-page-contents" id="connect-full-page">
-                    <div class="container">
-                        <h2>Social Connect</h2>
-                        <ul>
-                            <li><a href="https://www.linkedin.com/start/view-full-profile?_ed=0_hygUWYqO1QTkAnMPDHCrtBWkdQMXDcKZA7JxkeZYhFNEcRqGDTFUZBRVbL4HnJy_&trk=ndir_viewmore"><img src="https://content.linkedin.com/content/dam/me/about/LinkedIn_Icon.jpg.original.jpg" alt="LinkedIn Logo" /> Connect on LinkedIn</a></li>
-                            <li><a href="https://github.com/VARUN46/"><img src="https://github.com/fluidicon.png" alt="GitHub Logo" /> Connect on GitHub</a></li>
-
-                        </ul>
-                    </div>
-                </li>
-
-
-            </ul>
-        </div>
-    </div>
-
-    <!--Footer Imports-->
-    <script src="assets/popper.min.js"></script>
-    <script src="assets/bs4/js/bootstrap.min.js"></script>
-    <script>
-
-        window.onload = function () {
-
-            function SetPropertyHoverDisplayPage(source, target) {
-                $(source).click(function () {
-                    $(".full-page-contents").css({ 'display': 'none' });
-                    $("#full-page-content").css({ 'display': 'block' });
-                    $(target).css({'display':'block'});        
-                });
-            };
-
-            SetPropertyHoverDisplayPage("#about", "#about-full-page");
-            SetPropertyHoverDisplayPage("#skills", "#skills-full-page");
-            SetPropertyHoverDisplayPage("#connect", "#connect-full-page");
-
-
-            $("#close-full-page-content").click(function () {
-                $("#full-page-content").css({ 'display': 'none' });
-                $(".full-page-contents").css({ 'display': 'none' });
-            });
-
-
-
-            function SetPropertyHoverDisplayAndAnimate(source, target) {
-                $(source).hover(function () {
-                    $(target).animate({ 'opacity': '1' });
-                }, function () {
-                    $(target).animate({ 'opacity': '0' });
-                });
-            };
-            
-            SetPropertyHoverDisplayAndAnimate("#about","#about-summary");
-            SetPropertyHoverDisplayAndAnimate("#skills", "#skills-summary");
-            SetPropertyHoverDisplayAndAnimate("#connect", "#connect-summary");
-            SetPropertyHoverDisplayAndAnimate("#more", "#more-summary");
-
-        };
-
-        $.ajax({
-            url: 'https://api.github.com/users/VARUN46/repos',
-            type: 'GET',
-            success: function (response) {
-                var responseRepos = '<h1>Few of my learnings</h1><br/><h2>GitHub Repositories Available: ' + response.length + '<h2>';
-
-                for (r = 0; r < response.length; r++) {
-                    responseRepos += '<h3>' + response[r].name + '<h3><h5>' + response[r].description + '</h5><p><a href="' + response[r].html_url + '">Source Code Access Link</a></p>';
-                }
-
-                $("#about-full-page").html(responseRepos);
+            </div>
+        
+            <div id="contact-visible">
+                <ul>
+                    <li><a href="https://www.linkedin.com/start/view-full-profile?_ed=0_hygUWYqO1QTkAnMPDHCrtBWkdQMXDcKZA7JxkeZYhFNEcRqGDTFUZBRVbL4HnJy_&trk=ndir_viewmore"> <i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/VARUN46/"><i class="fab fa-github"></i></a></li>
                
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+
+    
+
+
+    <script>
+        var ViewsMapping = new Object();
+        function MapView(name, path) {
+            ViewsMapping[name] = path;
+        }
+
+        function GetViewPath(name) {
+            return ViewsMapping[name];
+        }
+
+        MapView('AboutView', 'Views/About.html');
+        MapView('SkillsView', 'Views/Skills.html');
+        MapView('HobbiesView', 'Views/Hobbies.html');
+        MapView('ContributionsView', 'Views/Contributions.html');
+
+        function LoadWindow(windowName) {
+            $("#active-window").css({'opacity':'0'});
+            $("#active-window").load(windowName);
+            $("#active-window").animate({ 'opacity': '1' });
+            console.log(windowName);
+        }
+
+        function GetWindow(windowName) {
+            switch (windowName) {
+                
+                case 'About':
+                    LoadWindow(GetViewPath('AboutView')); 
+                    break;
+                case 'Skills':
+                    LoadWindow(GetViewPath('SkillsView'));
+                    break;
+                
+                case 'Hobbies':
+                    LoadWindow(GetViewPath('HobbiesView'));
+                    break;
+                default:
+                case 'Contributions':
+                    LoadWindow(GetViewPath('ContributionsView'));
+                    break;
             }
+            console.log(windowName);
+        }
+
+
+
+
+        GetWindow('');
+
+
+        var Resources = new Object();
+        var resourceID = 0;
+        function InitializeResources(resourceContext, Identifier) {
+            Resources[++resourceID] = resourceContext;
+            Resources[new String(Identifier + resourceID).toString().toLowerCase()] = resourceContext;
+            console.log('ID: ' + resourceID + ' , ResourceContext: ' + resourceContext + ' , Identifier: ' + Identifier);
+        }
+
+
+        function DisposeResources() {
+            for (var resource in Resources) {
+                if (resource.includes('setinterval')) {
+                    clearInterval(Resources[resource]);
+                }
+            }
+        }
+
+
+
+
+
+        $("[data-view]").click(function (e) {
+            e.preventDefault();
+            DisposeResources();
+            GetWindow($(this).attr('data-view'));
+            InitializeResources();
+        });
+
+
+        
+        var isContactActive = 0;
+        $("#contact").click(function (e) {
+            e.preventDefault();
+            if (isContactActive===0) {
+                $(this).find(".far").removeClass("far").addClass("fas");
+                isContactActive = 1;
+            } else {
+                $(this).find(".fas").removeClass("fas").addClass("far");
+                isContactActive = 0;
+            }
+
+            if (isContactActive === 1) {
+                $("#contact-visible").css({ 'display': 'block' }).animate({ 'opacity': '1' });
+            } else {
+                $("#contact-visible").css({ 'display': 'none', 'opacity': '0.1' });
+
+            }
+
         });
 
 
