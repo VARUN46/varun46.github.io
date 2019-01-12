@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 Document Name: index.html
 Author Name: Varun Setia
 Created On: 24-Feb-2018
@@ -23,138 +23,107 @@ Technologies Used:
   
 </head>
 <body>
-    <div id="main-wrapper">
-        <div class="overlay"></div>
-        <div id="content-wrapper">
-            <h1>VARUN SETIA</h1>
-            <div id="menu">
-                <ul>
-                    <li><a data-view="About" href="#">About</a></li>
-                    <li><a data-view="Skills" href="#">Skills</a></li>
-                    <li><a data-view="Hobbies" href="#">Hobbies</a></li>
-                    <li><a data-view="Contributions" href="#">Open Source Contributions</a></li>
-                    <li><a id="contact" href="#">Contact <i class="far fa-lightbulb"></i></a></li>
-                </ul>
-            </div>
 
-            <div id="active-window">
 
-            </div>
-        
-            <div id="contact-visible">
-                <ul>
-                    <li><a href="https://www.linkedin.com/start/view-full-profile?_ed=0_hygUWYqO1QTkAnMPDHCrtBWkdQMXDcKZA7JxkeZYhFNEcRqGDTFUZBRVbL4HnJy_&trk=ndir_viewmore"> <i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/VARUN46/"><i class="fab fa-github"></i></a></li>
-               
-                </ul>
+<div id="top-menu">
+    <div class="container">
+        <ul>
+            <li><a href="#about-content"><i class="fas fa-user-alt"></i></a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i></a></li>
+        </ul>
+    </div>
+</div>
+<div id="content-body">
+<div class="page">
+    <div class="container">
+        <div id="about-content">
+            <div class="about-content-data">
+            <h1><i>Hello</i></h1>
+            <h2>I AM <b>VARUN SETIA</b></h2>
+            <h4>SOFTWARE ENGINEER</h4> <a href="#"><i class="fas fa-code"></i> <i class="fas fa-laptop-code"></i> </a>
             </div>
         </div>
-    
     </div>
+</div>
+<div class="page">
 
-    
-
-
-    <script>
-        var ViewsMapping = new Object();
-        function MapView(name, path) {
-            ViewsMapping[name] = path;
-        }
-
-        function GetViewPath(name) {
-            return ViewsMapping[name];
-        }
-
-        MapView('AboutView', 'Views/About.html');
-        MapView('SkillsView', 'Views/Skills.html');
-        MapView('HobbiesView', 'Views/Hobbies.html');
-        MapView('ContributionsView', 'Views/Contributions.html');
-
-        function LoadWindow(windowName) {
-            $("#active-window").css({'opacity':'0'});
-            $("#active-window").load(windowName);
-            $("#active-window").animate({ 'opacity': '1' });
-            console.log(windowName);
-        }
-
-        function GetWindow(windowName) {
-            switch (windowName) {
-                default:
-                case 'About':
-                    LoadWindow(GetViewPath('AboutView')); 
-                    break;
-                case 'Skills':
-                    LoadWindow(GetViewPath('SkillsView'));
-                    break;
-                
-                case 'Hobbies':
-                    LoadWindow(GetViewPath('HobbiesView'));
-                    break;
-                case 'Contributions':
-                    LoadWindow(GetViewPath('ContributionsView'));
-                    break;
-            }
-            console.log(windowName);
-        }
+    <div class="container" id="portfolio">
+        <h3>Portfolio</h3>
+        <div id="portfolio-app">
+            <div id="portfolio-app-nav">
+                <ul>
+                    <li><a data-call="git" href="javascript:void(0);"><i class="fab fa-github"></i> ( <span id="contributions-github-count"></span> )</a></li>
+                    <li><a data-call="stack" href="javascript:void(0);"><i class="fab fa-stack-overflow"></i></a></li>
+                </ul>
+            </div>
+            <div id="portfolio-app-presenter">
+                <div class="container presenter" id="git-presenter"></div>
+                <div class="presenter" id="stack-presenter">
+                        <a href="https://stackoverflow.com/users/5108335/varun-setia">
+                            <img src="https://stackoverflow.com/users/flair/5108335.png?theme=hotdog" width="208" height="58" alt="profile for Varun Setia at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Varun Setia at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                            </a>
+                </div>
 
 
+            </div>
+        </div>
+    </div>
+</div>
 
 
-        GetWindow('');
+<div id="flying-icons">
+<ul>
+    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+    <li><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+    <li><a href="#"><i class="fab fa-github"></i></a></li>
+</ul>
+</div>
 
 
-        var Resources = new Object();
-        var resourceID = 0;
-        function InitializeResources(resourceContext, Identifier) {
-            Resources[++resourceID] = resourceContext;
-            Resources[new String(Identifier + resourceID).toString().toLowerCase()] = resourceContext;
-            console.log('ID: ' + resourceID + ' , ResourceContext: ' + resourceContext + ' , Identifier: ' + Identifier);
-        }
+</div>
+<script>
+    LoadGit();
+function LoadGit(){
+    $.ajax({
+                        url: 'https://api.github.com/users/VARUN46/repos',
+                        type: 'GET',
+                        success: function (response) {
+
+                            $("#contributions-github-count").html(response.length);
+                            var responseRepos = '';
+
+                            for (r = 0; r < response.length; r++) {
+                                responseRepos += '<h3>' + response[r].name + '</h3><h5>' + (response[r].description!=null?response[r].description:'') + '</h5><p><a href="' + response[r].html_url + '">Source Code Access Link</a></p>';
+                            }
+
+                            $("#git-presenter").html(responseRepos);
+
+                        }
+                    });
+}
+
+LoadPortfolioItem('');
+function LoadPortfolioItem(type){
+    $(".presenter").css({'display':'none'});
+    switch(type){
+        default:
+        case 'git':
+        $("#git-presenter").css({'display':'block'});
+        break;
+        case 'stack':
+        $("#stack-presenter").css({'display':'block'});
+        break;
+    }
+}
+
+$("[data-call]").click(function(){
+    var call=$(this).attr("data-call");
+    LoadPortfolioItem(call);
+});
+
+</script>
 
 
-        function DisposeResources() {
-            for (var resource in Resources) {
-                if (resource.includes('setinterval')) {
-                    clearInterval(Resources[resource]);
-                }
-            }
-        }
-
-
-
-
-
-        $("[data-view]").click(function (e) {
-            e.preventDefault();
-            DisposeResources();
-            GetWindow($(this).attr('data-view'));
-            InitializeResources();
-        });
-
-
-        
-        var isContactActive = 0;
-        $("#contact").click(function (e) {
-            e.preventDefault();
-            if (isContactActive===0) {
-                $(this).find(".far").removeClass("far").addClass("fas");
-                isContactActive = 1;
-            } else {
-                $(this).find(".fas").removeClass("fas").addClass("far");
-                isContactActive = 0;
-            }
-
-            if (isContactActive === 1) {
-                $("#contact-visible").css({ 'display': 'block' }).animate({ 'opacity': '1' });
-            } else {
-                $("#contact-visible").css({ 'display': 'none', 'opacity': '0.1' });
-
-            }
-
-        });
-
-
-    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125351624-1"></script>
     <script>
