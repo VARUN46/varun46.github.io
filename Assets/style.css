@@ -6,8 +6,12 @@ body {
 .jumbotron {
     background: none;
 }
-a {
+a{
     color: initial;
+}
+
+a:hover{
+    text-decoration:none;
 }
 
 hr{
