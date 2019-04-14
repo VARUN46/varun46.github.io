@@ -1,139 +1,133 @@
-<!--
-Document Name: index.html
-Author Name: Varun Setia
-Created On: 24-Feb-2018
-Updated On: 12-Jan-2019
-Description: Portfolio Page Single Pager Application
-Technologies Used: 
--->
-<!Doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+﻿<!DOCTYPE html>
 
-    <title>Varun Setia | Portfolio Website</title>
-    <!--Header Imports-->
-    <link rel="stylesheet" href="assets/bs4/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src="assets/jquery-3.3.1.min.js"></script>
-    <!--Header Imports Ends Here-->
-  
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="Libraries/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="Assets/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="Assets/style.css?date=14-apr" />
+
+    <title> Varun Setia | Portfolio </title>
 </head>
 <body>
+    <div id="master-wrapper">
+        
+        <div id="info">
+            <div class="overlay">
+                <img src="Assets/bg.jpg" />
+            </div>
+
+            <div class="container">
+                <div class="jumbotron">
+                    <h1><i class="fas fa-user-tie master-icon"></i></h1>
+                    <h1>VARUN SETIA</h1>
+                    <h2>.NET Developer with C#</h2>
+                    <br />
+                    <br />
+
+                    <div id="skills-set">
+                        <div class="skill">
+                            <h2><i class="fas fa-server"></i></h2>
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>ASP.NET MVC</li>
+                                <li>ASP.NET Web API </li>
+                                <li>WCF Services</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill">
+                            <h2><i class="fas fa-database"></i></h2>
+                            <h3>Database</h3>
+                            <ul>
+                                <li>SQL Server</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
 
 
-<div id="top-menu">
-    <div class="container">
+                        <div class="skill">
+                            <h2><i class="fab fa-chrome"></i></h2>
+                            <h3>Front End</h3>
+                            <ul>
+                                <li>jQuery</li>
+                                <li>Angular</li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="overlay">
+                <img src="Assets/work.jpg" />
+            </div>
+            <div class="container">
+                <div class="jumbotron">
+                    <h2><i class="fas fa-code-branch master-icon"></i> Github Repositories</h2>
+                    <div class="animate-hr">
+                        <hr />
+                    </div>
+                    <div id="portfolio-template-to-render">
+                        <a href="#{url}">
+                            <div class="card">
+                                <h2>#{Title}</h2>
+                                <p>#{Description}</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="navigation-fixed-bottom">
         <ul>
-            <li><a href="#about-content"><i class="fas fa-user-alt"></i></a></li>
+            <li><a href="#info"><i class="fas fa-info-circle"></i></a></li>
             <li><a href="#portfolio"><i class="fas fa-briefcase"></i></a></li>
         </ul>
     </div>
-</div>
-<div id="content-body">
-<div class="page">
-    <div class="container">
-        <div id="about-content">
-            <div class="about-content-data">
-            <h1><i>Hello</i></h1>
-            <h2>I AM <b>VARUN SETIA</b></h2>
-            <h4>SOFTWARE ENGINEER</h4> <a href="#"><i class="fas fa-code"></i> <i class="fas fa-laptop-code"></i> </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="page">
-
-    <div class="container" id="portfolio">
-        <h3>Portfolio</h3>
-        <div id="portfolio-app">
-            <div id="portfolio-app-nav">
-                <ul>
-                    <li><a data-call="git" href="javascript:void(0);"><i class="fab fa-github"></i> ( <span id="contributions-github-count"></span> )</a></li>
-                    <li><a data-call="stack" href="javascript:void(0);"><i class="fab fa-stack-overflow"></i></a></li>
-                </ul>
-            </div>
-            <div id="portfolio-app-presenter">
-                <div class="container presenter" id="git-presenter"></div>
-                <div class="presenter" id="stack-presenter">
-                        <a href="https://stackoverflow.com/users/5108335/varun-setia">
-                            <img src="https://stackoverflow.com/users/flair/5108335.png?theme=hotdog" width="208" height="58" alt="profile for Varun Setia at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Varun Setia at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-                            </a>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="flying-icons">
-<ul>
-    <li><a href="https://www.linkedin.com/start/view-full-profile?_ed=0_hygUWYqO1QTkAnMPDHCrtBWkdQMXDcKZA7JxkeZYhFNEcRqGDTFUZBRVbL4HnJy_&trk=ndir_viewmore"><i class="fab fa-linkedin-in"></i></a></li>
-    <li><a href="https://stackoverflow.com/users/5108335/varun-setia"><i class="fab fa-stack-overflow"></i></a></li>
-    <li><a href="https://github.com/VARUN46/"><i class="fab fa-github"></i></a></li>
-</ul>
-</div>
-
-
-</div>
-<script>
-    LoadGit();
-function LoadGit(){
-    $.ajax({
-                        url: 'https://api.github.com/users/VARUN46/repos',
-                        type: 'GET',
-                        success: function (response) {
-
-                            $("#contributions-github-count").html(response.length);
-                            var responseRepos = '';
-
-                            for (r = 0; r < response.length; r++) {
-                                responseRepos += '<h3>' + response[r].name + '</h3><h5>' + (response[r].description!=null?response[r].description:'') + '</h5><p><a href="' + response[r].html_url + '">Source Code Access Link</a></p>';
-                            }
-
-                            $("#git-presenter").html(responseRepos);
-
-                        }
-                    });
-}
-
-LoadPortfolioItem('');
-function LoadPortfolioItem(type){
-    $(".presenter").css({'display':'none'});
-    switch(type){
-        default:
-        case 'git':
-        $("#git-presenter").css({'display':'block'});
-        break;
-        case 'stack':
-        $("#stack-presenter").css({'display':'block'});
-        break;
-    }
-}
-
-$("[data-call]").click(function(){
-    var call=$(this).attr("data-call");
-    LoadPortfolioItem(call);
-});
-
-</script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125351624-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        TweenMax.from("#info .jumbotron", 1, { opacity: 0,x:-1000, ease:Power2.easeInOut });
+        TweenMax.from("#skills-set .skill:nth-child(1)", 2, { opacity: 0,y:-1000, ease:Power2.easeInOut });
+        TweenMax.from("#skills-set .skill:nth-child(2)", 3, { opacity: 0,y:-1000, ease:Power2.easeInOut });
+        TweenMax.from("#skills-set .skill:nth-child(3)", 4, { opacity: 0,y:-1000, ease:Power2.easeInOut });
+     
+        TweenMax.from("#navigation-fixed-bottom", 4, { opacity: 0 });
 
-        gtag('config', 'UA-125351624-1');
+
+
+            $(document).ready(function () {
+                $.ajax({
+                    url: 'https://api.github.com/users/varun46/repos',
+                    method: 'GET',
+                    success: function (response) {
+                        var finalResult = '';
+                        response.forEach(item => {
+                            if (!item.fork) {
+                                finalResult+=TemplateInit(item.name,item.fork,item.description,item.html_url);
+                            };
+                        });
+                        $("#portfolio-template-to-render").html(finalResult);
+                    }
+                });
+            });
+
+        function TemplateInit(title,fork,description,url) {
+            var data = $("#portfolio-template-to-render").html();
+            data = data.replace("#{Title}", title).replace("#{Fork}", fork).replace("#{Description}", description).replace("#{url}",url);
+            return data;
+        }
+       
     </script>
-
-    <!--Footer Imports Ends Here-->
 </body>
 </html>
