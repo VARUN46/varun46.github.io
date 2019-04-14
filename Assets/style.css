@@ -1,0 +1,123 @@
+body {
+    font-family: 'Merienda', cursive!important;
+}
+
+.card,
+.jumbotron {
+    background: none;
+}
+a {
+    color: initial;
+}
+
+hr{
+    background:#FFF;
+}
+
+#info,
+#portfolio{
+    height:100vh;
+}
+
+#navigation-fixed-bottom {
+    position: fixed;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    max-width: 100%;
+    z-index: 100;
+    bottom: 0;
+    background: rgba(250,250,250,0.7);
+    color: #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    overflow:hidden;
+}
+    .overlay img{
+        width:100%;
+    }
+    #navigation-fixed-bottom ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+        #navigation-fixed-bottom ul li {
+            font-size: 20px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        
+
+
+        #info {
+            position:relative;
+            width: 100%;
+            min-height: 100%;
+            text-align: center;
+            background: #000;
+            background-size: cover;
+        }
+
+
+
+#skills-set{
+    display:flex;
+    justify-content:space-around;
+}
+
+#skills-set .skill{
+    border:1px solid #fff;
+    border-radius:20px;
+    box-shadow:5px 5px 5px rgb(200,200,200);
+    padding:10px;
+    min-width:100px;
+}
+
+.skill ul{
+    list-style:none;
+    padding:0;
+    text-align:left;
+}
+
+#portfolio{
+    position:relative;
+    height:100vh;
+    background:#000;
+}
+#portfolio a{
+    color:#FFF;
+}
+
+@keyframes master-icon-animation{
+    from{opacity:0.4;}
+    to{opacity:1;}
+}
+
+.master-icon{
+    animation-name:master-icon-animation;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes hr-animate-30-to-100{
+    from{width:30%;}
+    to{width:100%;}
+}
+
+.animate-hr {
+    animation-name: hr-animate-30-to-100;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
