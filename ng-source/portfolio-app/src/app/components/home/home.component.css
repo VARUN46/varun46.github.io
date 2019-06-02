@@ -4,3 +4,12 @@
     padding-top:200px;
 }
 
+@media all and (max-width:700px){
+    #technology-stack-items{
+        display: block!important;
+        padding-top:20px;
+    }
+    .technology-stack-item{
+        display: block;
+    }
+}

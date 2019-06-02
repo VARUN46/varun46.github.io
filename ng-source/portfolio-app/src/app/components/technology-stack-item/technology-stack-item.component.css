@@ -27,3 +27,12 @@
 .technologyStackCard .mdl-card__supporting-text{
     padding-top: 0;
 }
+
+@media all and (max-width:700px){
+    .technologyStackCard{
+        width: 60% !important;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:10%;
+    }
+}

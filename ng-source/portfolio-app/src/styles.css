@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background: rgb(170,170,170);
+    background: #FFF;
     font-family: 'Merienda', cursive!important;
+}
+
+.container{
+    margin-left:10%;
+    margin-right:15%;
+    padding-top:50px;
 }
