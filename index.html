@@ -1,133 +1,20 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="Libraries/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="Assets/jquery-3.4.0.min.js"></script>
-    <link rel="stylesheet" href="Assets/style.css?date=14-apr" />
+  <meta charset="utf-8">
+  <title>Varun Setia - My Portfolio App</title>
+  <base href="/">
 
-    <title> Varun Setia | Portfolio </title>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.c6f0384e2df750bd2703.css"></head>
 <body>
-    <div id="master-wrapper">
-        
-        <div id="info">
-            <div class="overlay">
-                <img src="Assets/bg.jpg" />
-            </div>
-
-            <div class="container">
-                <div class="jumbotron">
-                    <h1><i class="fas fa-user-tie master-icon"></i></h1>
-                    <h1>VARUN SETIA</h1>
-                    <h2>.NET Developer with C#</h2>
-                    <br />
-                    <br />
-
-                    <div id="skills-set">
-                        <div class="skill">
-                            <h2><i class="fas fa-server"></i></h2>
-                            <h3>Backend</h3>
-                            <ul>
-                                <li>ASP.NET MVC</li>
-                                <li>ASP.NET Web API </li>
-                                <li>WCF Services</li>
-                            </ul>
-                        </div>
-
-                        <div class="skill">
-                            <h2><i class="fas fa-database"></i></h2>
-                            <h3>Database</h3>
-                            <ul>
-                                <li>SQL Server</li>
-                                <li>MySQL</li>
-                            </ul>
-                        </div>
-
-
-                        <div class="skill">
-                            <h2><i class="fab fa-chrome"></i></h2>
-                            <h3>Front End</h3>
-                            <ul>
-                                <li>jQuery</li>
-                                <li>Angular</li>
-                            </ul>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="portfolio">
-            <div class="overlay">
-                <img src="Assets/work.jpg" />
-            </div>
-            <div class="container">
-                <div class="jumbotron">
-                    <h2><i class="fas fa-code-branch master-icon"></i> Github Repositories</h2>
-                    <div class="animate-hr">
-                        <hr />
-                    </div>
-                    <div id="portfolio-template-to-render">
-                        <a href="#{url}">
-                            <div class="card">
-                                <h2>#{Title}</h2>
-                                <p>#{Description}</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-    <div id="navigation-fixed-bottom">
-        <ul>
-            <li><a href="#info"><i class="fas fa-info-circle"></i></a></li>
-            <li><a href="#portfolio"><i class="fas fa-briefcase"></i></a></li>
-        </ul>
-    </div>
-    <script>
-        TweenMax.from("#info .jumbotron", 1, { opacity: 0,x:-1000, ease:Power2.easeInOut });
-        TweenMax.from("#skills-set .skill:nth-child(1)", 2, { opacity: 0,y:-1000, ease:Power2.easeInOut });
-        TweenMax.from("#skills-set .skill:nth-child(2)", 3, { opacity: 0,y:-1000, ease:Power2.easeInOut });
-        TweenMax.from("#skills-set .skill:nth-child(3)", 4, { opacity: 0,y:-1000, ease:Power2.easeInOut });
+  <app-root>
      
-        TweenMax.from("#navigation-fixed-bottom", 4, { opacity: 0 });
-
-
-
-            $(document).ready(function () {
-                $.ajax({
-                    url: 'https://api.github.com/users/varun46/repos',
-                    method: 'GET',
-                    success: function (response) {
-                        var finalResult = '';
-                        response.forEach(item => {
-                            if (!item.fork) {
-                                finalResult+=TemplateInit(item.name,item.fork,item.description,item.html_url);
-                            };
-                        });
-                        $("#portfolio-template-to-render").html(finalResult);
-                    }
-                });
-            });
-
-        function TemplateInit(title,fork,description,url) {
-            var data = $("#portfolio-template-to-render").html();
-            data = data.replace("#{Title}", title).replace("#{Fork}", fork).replace("#{Description}", description).replace("#{url}",url);
-            return data;
-        }
-       
-    </script>
-</body>
+  </app-root>
+ 
+<script src="runtime-es2015.858f8dd898b75fe86926.js" type="module"></script><script src="polyfills-es2015.e954256595c973372414.js" type="module"></script><script src="runtime-es5.741402d1d47331ce975c.js" nomodule></script><script src="polyfills-es5.943113ac054b16d954ae.js" nomodule></script><script src="scripts.9ef9718f924f5bd94420.js"></script><script src="main-es2015.7fe441beb2baec48cd69.js" type="module"></script><script src="main-es5.0b5edf047b94ffcda4aa.js" nomodule></script></body>
 </html>

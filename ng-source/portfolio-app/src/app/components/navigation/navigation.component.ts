@@ -7,7 +7,7 @@ import { NavigationItem } from './navigationItem';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-  private navigationItems: NavigationItem[];
+  navigationItems: NavigationItem[];
 
   constructor() {
     this.populateNav();
