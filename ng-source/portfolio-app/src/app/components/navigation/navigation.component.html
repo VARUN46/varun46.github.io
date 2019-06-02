@@ -1,0 +1,9 @@
+    <div class="nav-profile-name">
+      <h4>VARUN SETIA</h4>
+      <small class="nav-profile-description">Full Stack Developer</small>
+    </div>
+      <nav class="mdl-navigation">
+        <a *ngFor="let navItem of navigationItems" class="mdl-navigation__link" [routerLink]=[navItem.RouteLinkPathName]>{{ navItem.RouteName }}</a>
+   
+      </nav>
+   
