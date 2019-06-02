@@ -1,0 +1,29 @@
+.mainIconTechnologyStack{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.technologyStackCard{
+    width:200px;
+    background: rgb(0,0,200);
+    color:#FFF;
+}
+
+.mainIconTechnologyStack{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.technologyStackCard ul{
+    list-style: none;
+    padding:0;
+}
+
+.technologyStackDetails{
+    background: #FFF;
+}
+
+.technologyStackCard .mdl-card__supporting-text{
+    padding-top: 0;
+}

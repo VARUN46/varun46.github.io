@@ -2,11 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClient } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutWebsiteComponent } from './components/about-website/about-website.component';
+import { TechnologyStackItemComponent } from './components/technology-stack-item/technology-stack-item.component';
+import { GithubRepoItemComponent } from './components/github-repo-item/github-repo-item.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +19,14 @@ import { AboutWebsiteComponent } from './components/about-website/about-website.
     HomeComponent,
     NavigationComponent,
     PortfolioComponent,
-    AboutWebsiteComponent
+    AboutWebsiteComponent,
+    TechnologyStackItemComponent,
+    GithubRepoItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]
