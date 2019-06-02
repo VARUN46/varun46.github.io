@@ -1,1 +1,11 @@
-<app-github-repo-item title="Example" url="google.com"></app-github-repo-item>
+<div class="mdl-card mdl-shadow--2dp">
+
+    <h2> My Github Repositories </h2>
+    <hr/>
+        <app-github-repo-item 
+        *ngFor="let item of repos"
+        title="{{ item.name }}" 
+        description="{{ item.description }}"
+        url="{{ item.html_url }}"></app-github-repo-item>
+
+</div>

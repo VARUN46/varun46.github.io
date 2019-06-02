@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FetchReposService } from './fetch-repos.service';
+import { RepositoryDetails } from './RepositoryDetails';
+
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  repos: RepositoryDetails[];
+  constructor(private svcRequest: FetchReposService) {
+    this.repos = [];
+  }
 
   ngOnInit() {
+    this.svcRequest.getVarunRepos().subscribe(
+      data => {
+        data.forEach(item => {
+          if (!item.fork) {
+            this.repos.push(item);
+          }
+        });
+
+       }
+      );
   }
 
 }

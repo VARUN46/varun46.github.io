@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -21,12 +21,12 @@ import { GithubRepoItemComponent } from './components/github-repo-item/github-re
     PortfolioComponent,
     AboutWebsiteComponent,
     TechnologyStackItemComponent,
-    GithubRepoItemComponent
+    GithubRepoItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

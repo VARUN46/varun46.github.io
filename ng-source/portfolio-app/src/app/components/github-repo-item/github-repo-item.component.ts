@@ -10,7 +10,7 @@ export class GithubRepoItemComponent implements OnInit {
 
   @Input() title: string;
   @Input() url: string;
-
+  @Input() description: string;
   constructor() { }
 
   ngOnInit() {
