@@ -11,6 +11,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutWebsiteComponent } from './components/about-website/about-website.component';
 import { TechnologyStackItemComponent } from './components/technology-stack-item/technology-stack-item.component';
 import { GithubRepoItemComponent } from './components/github-repo-item/github-repo-item.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { GithubRepoItemComponent } from './components/github-repo-item/github-re
     AboutWebsiteComponent,
     TechnologyStackItemComponent,
     GithubRepoItemComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
