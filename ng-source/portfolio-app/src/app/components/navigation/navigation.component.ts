@@ -27,6 +27,18 @@ export class NavigationComponent implements OnInit {
     navItem3.RouteName = 'About this website';
     navItem3.RouteLinkPathName = 'aboutwebsite';
     this.navigationItems.push(navItem3);
+    this.activeLink('Home');
+  }
+
+  public activeLink(name: string) {
+    this.navigationItems.forEach((value, index) => {
+      if (value.RouteName === name) {
+        this.navigationItems[index].IsActive = true;
+      } else {
+        this.navigationItems[index].IsActive = false;
+      }
+    });
+
   }
 
   ngOnInit() {

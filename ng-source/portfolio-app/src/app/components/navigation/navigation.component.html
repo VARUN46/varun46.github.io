@@ -3,7 +3,11 @@
       <small class="nav-profile-description">Full Stack Developer</small>
     </div>
       <nav class="mdl-navigation">
-        <a *ngFor="let navItem of navigationItems" class="mdl-navigation__link" [routerLink]=[navItem.RouteLinkPathName]>{{ navItem.RouteName }}</a>
+        <a *ngFor="let navItem of navigationItems" 
+        [routerLink]=[navItem.RouteLinkPathName]
+        [ngClass]="{ 'mdl-navigation__link': true ,'active-navlink' : navItem.IsActive  }"
+        (click)="this.activeLink(navItem.RouteName)"
+        >{{ navItem.RouteName }}</a>
    
       </nav>
    

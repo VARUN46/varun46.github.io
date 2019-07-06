@@ -1,11 +1,17 @@
 <div class="container">
+    <div *ngIf="this.IsLoadingData">
+        <div class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>
+    <h2> <i class="fas fa-code-branch master-icon"></i> My Github Repositories  </h2>
+    
+    
 
-    <h2> <i class="fas fa-code-branch master-icon"></i> My Github Repositories </h2>
     <hr/>
-        <app-github-repo-item 
-        *ngFor="let item of repos"
-        title="{{ item.name }}" 
-        description="{{ item.description }}"
-        url="{{ item.html_url }}"></app-github-repo-item>
-
+        <div *ngIf="!this.IsLoadingData">
+            <app-github-repo-item 
+            *ngFor="let item of repos"
+            title="{{ item.name }}" 
+            description="{{ item.description }}"
+            url="{{ item.html_url }}"></app-github-repo-item>
+        </div>
 </div>

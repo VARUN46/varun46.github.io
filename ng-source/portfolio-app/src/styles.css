@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --dominant-color:rgb(110, 0, 200);
+    --second-dominant-color:rgb(75, 0, 250);
+    --third-dominant-color:rgb(0, 0, 10);
+
+}
+
 body{
     background: #FFF;
     font-family: 'Merienda', cursive!important;
@@ -9,3 +16,4 @@ body{
     margin-right:15%;
     padding-top:50px;
 }
+

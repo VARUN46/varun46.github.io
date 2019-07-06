@@ -1,38 +1,39 @@
-.mainIconTechnologyStack{
-    padding-top:10px;
-    padding-bottom:10px;
+.technologyStackCard .representation,
+.technologyStackCard .content
+{
+    float:left;
 }
 
 .technologyStackCard{
-    width:200px;
-    background: rgb(0,0,200);
-    color:#FFF;
-}
-
-.mainIconTechnologyStack{
     display: block;
-    width: 100%;
-    text-align: center;
-}
-
-.technologyStackCard ul{
-    list-style: none;
-    padding:0;
-}
-
-.technologyStackDetails{
+    position: relative;
+    left:50%;
+    transform: translateX(-75%);
+    width: 500px;
+    border: 3px solid var(--second-dominant-color);
+    box-shadow: 6px 6px 6px var(--third-dominant-color);
     background: #FFF;
+    height: 150px;
+    padding-top:20px!important;
+    margin-top:20px;
+    border-radius: 20px;
+    border-bottom-left-radius: 50%;
 }
 
-.technologyStackCard .mdl-card__supporting-text{
-    padding-top: 0;
+.technologyStackCard .representation{
+    position: relative;
+    text-align: center;
+    width:30%;
+    top:-25px;
 }
 
-@media all and (max-width:700px){
+@media all and (max-width:600px){
     .technologyStackCard{
-        width: 60% !important;
-        margin-left:20%;
-        margin-right:20%;
-        margin-top:10%;
+        transform:translateX(-50%);
+        width:400px;     
     }
+}
+
+.technologyStackCard > .representation i{
+    color:var(--second-dominant-color);
 }

@@ -13,7 +13,9 @@ export class PortfolioComponent implements OnInit {
   repos: RepositoryDetails[];
   constructor(private svcRequest: FetchReposService) {
     this.repos = [];
+    this.IsLoadingData = true;
   }
+  IsLoadingData: boolean;
 
   ngOnInit() {
     this.svcRequest.getVarunRepos().subscribe(
@@ -23,9 +25,11 @@ export class PortfolioComponent implements OnInit {
             this.repos.push(item);
           }
         });
+        this.IsLoadingData = false;
 
        }
       );
+
   }
 
 }

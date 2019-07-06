@@ -1,8 +1,20 @@
 .nav-profile-name{
-    background: #000;
+    background: var(--dominant-color);
     color:#FFF;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     font-weight: bolder;
+}
+
+.active-navlink{
+    background:var(--dominant-color)!important;
+    color: #FFF!important;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    font-size: 1.2em;
+}
+.active-navlink::before{
+    content: '- ';
+    color:var(--third-dominant-color);
 }

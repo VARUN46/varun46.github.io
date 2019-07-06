@@ -1,17 +1,13 @@
 
 
-<div class="mdl-card mdl-shadow--2dp technologyStackCard">
-    <h3 class="mainIconTechnologyStack"><i class="{{ presentationIcon }}"></i></h3>
-  <div class="technologyStackDetails">
-  <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">{{ stackTitle }}</h2>
-    </div>
-    <div class="mdl-card__supporting-text">
+<div class="technologyStackCard">
+      <div class="representation">
+        <h3><i class="{{ presentationIcon }}"></i></h3>
+        <h5>{{ stackTitle }}</h5>
+      </div>
+      <div class="content">
       <ul>
         <li *ngFor="let item of StackItems"> {{ item }} </li>
-      </ul>
+      </ul>  
     </div>
-  </div>
-    
-    
   </div>

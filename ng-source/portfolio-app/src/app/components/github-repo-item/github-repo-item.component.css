@@ -1,0 +1,4 @@
+.github-repo-item a{
+    color:var(--dominant-color)!important;
+    text-decoration: none;
+}
