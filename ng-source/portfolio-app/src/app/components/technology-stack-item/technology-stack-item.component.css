@@ -7,9 +7,6 @@
 .technologyStackCard{
     display: block;
     position: relative;
-    left:50%;
-    transform: translateX(-75%);
-    width: 500px;
     border: 3px solid var(--second-dominant-color);
     box-shadow: 6px 6px 6px var(--third-dominant-color);
     background: #FFF;
@@ -17,22 +14,15 @@
     padding-top:20px!important;
     margin-top:20px;
     border-radius: 20px;
-    border-bottom-left-radius: 50%;
 }
 
 .technologyStackCard .representation{
     position: relative;
     text-align: center;
     width:30%;
-    top:-25px;
 }
 
-@media all and (max-width:600px){
-    .technologyStackCard{
-        transform:translateX(-50%);
-        width:400px;     
-    }
-}
+
 
 .technologyStackCard > .representation i{
     color:var(--second-dominant-color);

@@ -1,13 +1,16 @@
-    <div class="nav-profile-name">
-      <h4><i class="fas fa-user-tie master-icon"></i> VARUN SETIA</h4>
-      <small class="nav-profile-description">Full Stack Developer</small>
-    </div>
-      <nav class="mdl-navigation">
-        <a *ngFor="let navItem of navigationItems" 
-        [routerLink]=[navItem.RouteLinkPathName]
-        [ngClass]="{ 'mdl-navigation__link': true ,'active-navlink' : navItem.IsActive  }"
-        (click)="this.activeLink(navItem.RouteName)"
-        >{{ navItem.RouteName }}</a>
-   
-      </nav>
+<div id="navigation-bar">
+<div (click)="toggleNavigationExpander()" id="navigation-expander">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div> 
+<ul id="navitem-list" class="hide">
+
+        <li *ngFor="let navItem of navigationItems"><a 
+        [href]=[navItem.RouteLinkPathName]
+        >{{ navItem.RouteName }}</a></li>
+
+  </ul>
+
+</div>
    
