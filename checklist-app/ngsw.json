@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574875837486,
+  "timestamp": 1575383377992,
   "index": "/checklist-app/index.html",
   "assetGroups": [
     {
@@ -10,13 +10,13 @@
       "urls": [
         "/checklist-app/favicon.ico",
         "/checklist-app/index.html",
-        "/checklist-app/main-es2015.39de1d30827c4f53a55f.js",
-        "/checklist-app/main-es5.ae1ada6b7630debd97ad.js",
+        "/checklist-app/main-es2015.2b2e37389b32951c3568.js",
+        "/checklist-app/main-es5.50d9af1539c525fcec56.js",
         "/checklist-app/polyfills-es2015.b93f30bc0ba4b00b07fe.js",
         "/checklist-app/polyfills-es5.6fd95ed1be956c82654c.js",
         "/checklist-app/runtime-es2015.ca84bb782683800d794b.js",
         "/checklist-app/runtime-es5.8f24ffed1c06a6510470.js",
-        "/checklist-app/styles.4c7e689235f7f967f1c0.css"
+        "/checklist-app/styles.d626cb5a8139480d1ce6.css"
       ],
       "patterns": []
     },
@@ -25,6 +25,7 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "/checklist-app/assets/bootstrap.min.css",
         "/checklist-app/assets/icons/icon-128x128.png",
         "/checklist-app/assets/icons/icon-144x144.png",
         "/checklist-app/assets/icons/icon-152x152.png",
@@ -39,6 +40,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/checklist-app/assets/bootstrap.min.css": "6fdde7f58747c55b1fd552ad900a4c0a031492dd",
     "/checklist-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/checklist-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/checklist-app/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -48,14 +50,14 @@
     "/checklist-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/checklist-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/checklist-app/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/checklist-app/index.html": "32c2b02a0947092ff162149700b38c31977b1f78",
-    "/checklist-app/main-es2015.39de1d30827c4f53a55f.js": "577ad108e5e973d6a40d20defc6890a06894629d",
-    "/checklist-app/main-es5.ae1ada6b7630debd97ad.js": "c18914df03a516d4cf094c92e24f8a9c7a3cbc63",
+    "/checklist-app/index.html": "983fd0a4b14aa139eee3bf2e474d7ff59d444e5e",
+    "/checklist-app/main-es2015.2b2e37389b32951c3568.js": "84b0e432e707bef264327d01d81652dc8f2d4d0d",
+    "/checklist-app/main-es5.50d9af1539c525fcec56.js": "ce652a7b7a05acce3dd86b54d6132db951cb2989",
     "/checklist-app/polyfills-es2015.b93f30bc0ba4b00b07fe.js": "ffe5f8cfa6eae51a7a95e8363b303b0c44ade852",
     "/checklist-app/polyfills-es5.6fd95ed1be956c82654c.js": "e8b3f6682f6dc8ae349eb9c2e31f699ada3b8a69",
     "/checklist-app/runtime-es2015.ca84bb782683800d794b.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "/checklist-app/runtime-es5.8f24ffed1c06a6510470.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/checklist-app/styles.4c7e689235f7f967f1c0.css": "79f150e483d249a1c7492ec7856e43e3f92dac77"
+    "/checklist-app/styles.d626cb5a8139480d1ce6.css": "170a407d67d1580191b45d6044cfb4448ecf8794"
   },
   "navigationUrls": [
     {
