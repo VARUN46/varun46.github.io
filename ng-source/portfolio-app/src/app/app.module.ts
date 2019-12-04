@@ -12,6 +12,9 @@ import { AboutWebsiteComponent } from './components/about-website/about-website.
 import { TechnologyStackItemComponent } from './components/technology-stack-item/technology-stack-item.component';
 import { GithubRepoItemComponent } from './components/github-repo-item/github-repo-item.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MyLiveAppsComponent } from './components/my-live-apps/my-live-apps.component';
+import { MyLiveAppsEntryComponent } from './utilities/my-live-apps-entry/my-live-apps-entry.component';
+import { TechnologyStackItemsComponent } from './components/technology-stack-items/technology-stack-items.component';
 
 
 @NgModule({
@@ -24,6 +27,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     TechnologyStackItemComponent,
     GithubRepoItemComponent,
     NotFoundComponent,
+    MyLiveAppsComponent,
+    MyLiveAppsEntryComponent,
+    TechnologyStackItemsComponent,
   ],
   imports: [
     BrowserModule,

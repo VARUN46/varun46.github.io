@@ -9,15 +9,22 @@
 }
 
 #welcome-page,
-#technology-stack-items,
 #home-github-repo-item{
     min-height: 100vh;
     width:100%;
     position: relative;
 }
 
+#my-live-apps-wrapper,
+#technology-stack-items{
+    width:100%;
+    position: relative;
+}
+
 #welcome-page{
-    background: #000;
+    background:url(../../../assets/system.jpeg);
+    background-attachment: fixed;
+    background-position: center;
     overflow: hidden;
 }
 
@@ -44,7 +51,6 @@
     animation-name: text-move-animate-rtl;
     animation-duration: 50s;
     animation-iteration-count: infinite;
-
 }
 
 @keyframes text-move-animate-ltr {
@@ -55,8 +61,6 @@
         margin-left:10%;
     }
 }
-
-
 
 /* Standard syntax */
 @keyframes text-move-animate-rtl {
@@ -81,10 +85,7 @@
     margin-top:200px;
 }
 
-#technology-stack-items{
-    width:initial;
 
-}
 
 .master-icon{
     color:var(--second-dominant-color);

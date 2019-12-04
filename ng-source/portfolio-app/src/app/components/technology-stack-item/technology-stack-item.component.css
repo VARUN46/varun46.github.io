@@ -1,29 +1,18 @@
-.technologyStackCard .representation,
-.technologyStackCard .content
-{
+.technology-card{
     float:left;
+    width:250px;
 }
 
-.technologyStackCard{
+.card-title{
     display: block;
-    position: relative;
-    border: 3px solid var(--second-dominant-color);
-    box-shadow: 6px 6px 6px var(--third-dominant-color);
-    background: #FFF;
-    height: 150px;
-    padding-top:20px!important;
-    margin-top:20px;
-    border-radius: 20px;
-}
-
-.technologyStackCard .representation{
-    position: relative;
+    width: 100%;
     text-align: center;
-    width:30%;
 }
 
-
-
-.technologyStackCard > .representation i{
-    color:var(--second-dominant-color);
+@media all and (max-width:700px){
+    .technology-card{
+        display: block;
+        width:100%;
+    }
+    
 }

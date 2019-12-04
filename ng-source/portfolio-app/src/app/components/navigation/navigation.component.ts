@@ -24,12 +24,16 @@ export class NavigationComponent implements OnInit {
     this.navigationItems.push(navItem1);
     const navItem3: NavigationItem = new NavigationItem();
     navItem3.RouteName = 'Technology Stack';
-    navItem3.RouteLinkPathName = '#technology-stack-items';
+    navItem3.RouteLinkPathName = '#technology-stack-items-wrapper';
     this.navigationItems.push(navItem3);
     const navItem2: NavigationItem = new NavigationItem();
     navItem2.RouteName = 'Portfolio';
     navItem2.RouteLinkPathName = '#home-github-repo-item';
     this.navigationItems.push(navItem2);
+    const navItem4: NavigationItem = new NavigationItem();
+    navItem4.RouteName = 'About';
+    navItem4.RouteLinkPathName = 'about';
+    this.navigationItems.push(navItem4);
   }
 
 
@@ -53,8 +57,8 @@ export class NavigationComponent implements OnInit {
       selectedBar.forEach(item => {
       item.classList.add('open-bar');
     });
-    navItemsList.classList.remove('hide');
-    this.isNavExpanded = true;
+      navItemsList.classList.remove('hide');
+      this.isNavExpanded = true;
 
     }
   }

@@ -9,7 +9,8 @@
 
 #navigation-bar ul a{
     text-decoration: none;
-    color:rgb(100,100,100);
+    color:rgb(0,0,0);
+    text-shadow: 1px 1px #FFF;
 }
 
 #navigation-expander{
@@ -19,7 +20,8 @@
 #navigation-expander .bar{
     width:40px;
     height: 5px;
-    background:rgb(100,100,100);
+    background:#000;
+    border:1px solid #FFF;
     margin-top:10px;
     cursor: pointer;
 }
