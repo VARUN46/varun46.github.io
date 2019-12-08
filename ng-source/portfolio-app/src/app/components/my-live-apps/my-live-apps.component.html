@@ -1,11 +1,10 @@
-<div class="container">
-<span style="zoom:2;text-align: center;" class="mdl-chip mdl-chip--contact">
-    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"><i class="far fa-window-maximize"></i></span>
-    <span class="mdl-chip__text">My Live Apps</span>
-</span>
+<div class="main-page-wrapper">
+<app-section-title fontIconClasses="far fa-window-maximize" title="My Live Apps"></app-section-title>
 
 <hr/>
-
-<app-my-live-apps-entry appName="Checklist App" description="Checklist App to Manage Daily / Weekly / Random Activities. Made with Angular 8" url="https://varun46.github.io/checklist-app/"></app-my-live-apps-entry>
+<div id="apps-collection">
+    <app-my-live-apps-entry class="card-formatter" appName="Checklist App" description="Checklist App to Manage Daily / Weekly / Random Activities. Made with Angular 8" url="https://varun46.github.io/checklist-app"></app-my-live-apps-entry>
+    <app-my-live-apps-entry class="card-formatter" appName="Story Teller App" description="Tell Stories in the best way. Made with Angular 8" url="https://varun46.github.io/story-teller/"></app-my-live-apps-entry>
+</div>
 
 </div>

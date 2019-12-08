@@ -7,7 +7,7 @@
 <ul id="navitem-list" class="hide">
 
         <li *ngFor="let navItem of navigationItems"><a 
-        [href]=[navItem.RouteLinkPathName]
+        [routerLink]=[navItem.RouteLinkPathName]
         >{{ navItem.RouteName }}</a></li>
 
   </ul>

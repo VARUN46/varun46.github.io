@@ -15,6 +15,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { MyLiveAppsComponent } from './components/my-live-apps/my-live-apps.component';
 import { MyLiveAppsEntryComponent } from './utilities/my-live-apps-entry/my-live-apps-entry.component';
 import { TechnologyStackItemsComponent } from './components/technology-stack-items/technology-stack-items.component';
+import { SectionTitleComponent } from './utilities/section-title/section-title.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { TechnologyStackItemsComponent } from './components/technology-stack-ite
     MyLiveAppsComponent,
     MyLiveAppsEntryComponent,
     TechnologyStackItemsComponent,
+    SectionTitleComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,9 +10,23 @@ body{
     font-family: 'Merienda', cursive!important;
 }
 
-.container{
-    margin-left:10%;
-    margin-right:15%;
-    padding-top:50px;
+
+.card-formatter{
+    width: 300px!important;
+    margin-bottom: 20px;
+    max-width: 90% !important;
 }
 
+@media all and (max-width:600px){
+    .card-formatter{
+        display: block !important;
+    }
+}
+
+.main-page-wrapper{
+    max-width: 85%;
+    margin-left: 5%;
+    margin-right: 10%; 
+    margin-top:50px; 
+}
+   
