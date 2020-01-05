@@ -1,0 +1,13 @@
+V:\Portfolio\Solution\Solution.ViewModels\bin\Debug\netstandard2.0\Solution.ViewModels.deps.json
+V:\Portfolio\Solution\Solution.ViewModels\bin\Debug\netstandard2.0\Solution.ViewModels.dll
+V:\Portfolio\Solution\Solution.ViewModels\bin\Debug\netstandard2.0\Solution.ViewModels.pdb
+V:\Portfolio\Solution\Solution.ViewModels\bin\Debug\netstandard2.0\Solution.Entities.dll
+V:\Portfolio\Solution\Solution.ViewModels\bin\Debug\netstandard2.0\Solution.Entities.pdb
+V:\Portfolio\Solution\Solution.ViewModels\obj\Debug\netstandard2.0\Solution.ViewModels.csprojAssemblyReference.cache
+V:\Portfolio\Solution\Solution.ViewModels\obj\Debug\netstandard2.0\Solution.ViewModels.AssemblyInfoInputs.cache
+V:\Portfolio\Solution\Solution.ViewModels\obj\Debug\netstandard2.0\Solution.ViewModels.AssemblyInfo.cs
+V:\Portfolio\Solution\Solution.ViewModels\obj\Debug\netstandard2.0\Solution.ViewModels.csproj.CopyComplete
+V:\Portfolio\Solution\Solution.ViewModels\obj\Debug\netstandard2.0\Solution.ViewModels.dll
+V:\Portfolio\Solution\Solution.ViewModels\obj\Debug\netstandard2.0\Solution.ViewModels.pdb
+V:\Portfolio\Solution\Solution.ViewModels\bin\Debug\netstandard2.0\Solution.Interfaces.dll
+V:\Portfolio\Solution\Solution.ViewModels\bin\Debug\netstandard2.0\Solution.Interfaces.pdb

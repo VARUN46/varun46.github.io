@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solution.Entities\Solution.Entities.csproj" />
+    <ProjectReference Include="..\Solution.Interfaces\Solution.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

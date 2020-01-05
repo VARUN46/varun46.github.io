@@ -1,0 +1,36 @@
+﻿@inject TechnologiesViewModel ViewModel
+
+<h3>@ViewModel.Title</h3>
+
+<div id="technologies-wrapper-row" class="row bg-info">
+
+    @foreach (var item in ViewModel.TechnologiesDetails)
+    {
+    <div class="col-md-6">
+        <div class="technology-card-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <div class="bg-info">
+                        <h3 class="card-title">@item.Key</h3>
+                    </div>
+                    <ul>
+                        @foreach (var itemTechs in item.Value)
+                        {
+                            <li class="card-text">@itemTechs.TechnologyName</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+
+</div>
+
+
+@code {
+
+
+
+}
+

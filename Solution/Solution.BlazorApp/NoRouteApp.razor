@@ -1,0 +1,53 @@
+﻿@page "/"
+@inject AppMainViewModel vm
+
+<ul id="master-nav" class="nav">
+    <li class="nav-item">
+        <a class="nav-link @(vm.NavigationVm.ActiveItem == NavigationViewModel.Home?"active":"")" 
+           href="javascript:void(0)" @onclick="@(()=>RenderSection(NavigationViewModel.Home))">@NavigationViewModel.Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(vm.NavigationVm.ActiveItem == NavigationViewModel.Technologies?"active":"")"
+           href="javascript:void(0)" @onclick="@(()=>RenderSection(NavigationViewModel.Technologies))">@NavigationViewModel.Technologies</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link @(vm.NavigationVm.ActiveItem == NavigationViewModel.Portfolio?"active":"")"
+           href="javascript:void(0)" @onclick="@(()=>RenderSection(NavigationViewModel.Portfolio))">@NavigationViewModel.Portfolio</a>
+    </li>
+</ul>
+<div id="master-nav-adjust"></div>
+<div class="container">
+
+    @switch (vm.NavigationVm.ActiveItem)
+    {
+        default:
+        case NavigationViewModel.Home:
+
+            <Solution.BlazorApp.Pages.Index />
+
+            break;
+        case NavigationViewModel.Portfolio:
+
+            <Solution.BlazorApp.Pages.Portfolio />
+
+            break;
+        case NavigationViewModel.Technologies:
+
+            <Solution.BlazorApp.Pages.Technologies />
+
+            break;
+    }
+</div>
+
+@code {
+    
+    void RenderSection(string navItem)
+    {
+        vm.NavigationVm.ActiveItem = navItem;
+        StateHasChanged();
+    }
+
+}
+
+
+

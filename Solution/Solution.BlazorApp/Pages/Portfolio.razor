@@ -1,0 +1,41 @@
+﻿@inject PortfolioViewModel ViewModel
+
+<h3>@ViewModel.Title</h3>
+
+<div class="row">
+
+    @if(ViewModel.IsProjectsLoading)
+    {
+    <div class="spinner-grow text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    }
+
+    @if(!ViewModel.IsProjectsLoading && ViewModel.Projects.Count == 0)
+    {
+        <p>No Projects Available or Kindly Confirm If Github repository URL is correct!</p>
+    }
+
+    @foreach (var item in ViewModel.Projects)
+    {
+    <div class="col-12 portfolio-card-wrapper">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">@item.ProjectName</h2>
+                <p class="card-text">@item.ProjectSummary</p>
+                <a class="card-link" target="_blank" href="@item.ProjectUrl">Open Repository</a>
+            </div>
+        </div>
+    </div>
+    }
+
+
+</div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await ViewModel.InitializeDataAsync();
+    }
+
+}

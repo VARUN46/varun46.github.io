@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "js-polyfills@0.1.42",
+      "destination": "wwwroot/lib/js-polyfills/"
+    }
+  ]
+}

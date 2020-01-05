@@ -1,0 +1,19 @@
+﻿@inject WelcomeViewModel ViewModel
+
+    <div id="home-intro" class="jumbotron">
+        <div class="black-overlay"></div>
+        <div id="home-content-wrapper">
+            <h1>
+                @ViewModel.Title
+            </h1>
+            <h3>
+                @ViewModel.UserDetails.UserSummary
+            </h3>
+        </div>
+    </div>
+
+@code {
+
+
+
+}
