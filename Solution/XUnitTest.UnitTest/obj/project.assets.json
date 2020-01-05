@@ -6373,11 +6373,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "V:\\Portfolio\\Solution\\XUnitTest.UnitTest\\XUnitTest.UnitTest.csproj",
+      "projectUniqueName": "V:\\gitprojs\\varun46.github.io\\Solution\\XUnitTest.UnitTest\\XUnitTest.UnitTest.csproj",
       "projectName": "XUnitTest.UnitTest",
-      "projectPath": "V:\\Portfolio\\Solution\\XUnitTest.UnitTest\\XUnitTest.UnitTest.csproj",
+      "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\XUnitTest.UnitTest\\XUnitTest.UnitTest.csproj",
       "packagesPath": "C:\\Users\\setia\\.nuget\\packages\\",
-      "outputPath": "V:\\Portfolio\\Solution\\XUnitTest.UnitTest\\obj\\",
+      "outputPath": "V:\\gitprojs\\varun46.github.io\\Solution\\XUnitTest.UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6399,8 +6399,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "V:\\Portfolio\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj": {
-              "projectPath": "V:\\Portfolio\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj"
+            "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj": {
+              "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj"
             }
           }
         }

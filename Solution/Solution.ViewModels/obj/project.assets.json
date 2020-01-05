@@ -221,11 +221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "V:\\Portfolio\\Solution\\Solution.ViewModels\\Solution.ViewModels.csproj",
+      "projectUniqueName": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.ViewModels\\Solution.ViewModels.csproj",
       "projectName": "Solution.ViewModels",
-      "projectPath": "V:\\Portfolio\\Solution\\Solution.ViewModels\\Solution.ViewModels.csproj",
+      "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.ViewModels\\Solution.ViewModels.csproj",
       "packagesPath": "C:\\Users\\setia\\.nuget\\packages\\",
-      "outputPath": "V:\\Portfolio\\Solution\\Solution.ViewModels\\obj\\",
+      "outputPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -247,11 +247,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "V:\\Portfolio\\Solution\\Solution.Entities\\Solution.Entities.csproj": {
-              "projectPath": "V:\\Portfolio\\Solution\\Solution.Entities\\Solution.Entities.csproj"
+            "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Entities\\Solution.Entities.csproj": {
+              "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Entities\\Solution.Entities.csproj"
             },
-            "V:\\Portfolio\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj": {
-              "projectPath": "V:\\Portfolio\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj"
+            "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj": {
+              "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj"
             }
           }
         }

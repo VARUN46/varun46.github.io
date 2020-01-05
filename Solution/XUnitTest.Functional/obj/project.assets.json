@@ -6520,11 +6520,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "V:\\Portfolio\\Solution\\XUnitTest.Functional\\XUnitTest.Functional.csproj",
+      "projectUniqueName": "V:\\gitprojs\\varun46.github.io\\Solution\\XUnitTest.Functional\\XUnitTest.Functional.csproj",
       "projectName": "XUnitTest.Functional",
-      "projectPath": "V:\\Portfolio\\Solution\\XUnitTest.Functional\\XUnitTest.Functional.csproj",
+      "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\XUnitTest.Functional\\XUnitTest.Functional.csproj",
       "packagesPath": "C:\\Users\\setia\\.nuget\\packages\\",
-      "outputPath": "V:\\Portfolio\\Solution\\XUnitTest.Functional\\obj\\",
+      "outputPath": "V:\\gitprojs\\varun46.github.io\\Solution\\XUnitTest.Functional\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -1556,11 +1556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "V:\\Portfolio\\Solution\\Solution.BlazorApp\\Solution.BlazorApp.csproj",
+      "projectUniqueName": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.BlazorApp\\Solution.BlazorApp.csproj",
       "projectName": "Solution.BlazorApp",
-      "projectPath": "V:\\Portfolio\\Solution\\Solution.BlazorApp\\Solution.BlazorApp.csproj",
+      "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.BlazorApp\\Solution.BlazorApp.csproj",
       "packagesPath": "C:\\Users\\setia\\.nuget\\packages\\",
-      "outputPath": "V:\\Portfolio\\Solution\\Solution.BlazorApp\\obj\\",
+      "outputPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.BlazorApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1582,14 +1582,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "V:\\Portfolio\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj": {
-              "projectPath": "V:\\Portfolio\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj"
+            "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj": {
+              "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj"
             },
-            "V:\\Portfolio\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj": {
-              "projectPath": "V:\\Portfolio\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj"
+            "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj": {
+              "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj"
             },
-            "V:\\Portfolio\\Solution\\Solution.ViewModels\\Solution.ViewModels.csproj": {
-              "projectPath": "V:\\Portfolio\\Solution\\Solution.ViewModels\\Solution.ViewModels.csproj"
+            "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.ViewModels\\Solution.ViewModels.csproj": {
+              "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.ViewModels\\Solution.ViewModels.csproj"
             }
           }
         }

@@ -261,11 +261,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "V:\\Portfolio\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj",
+      "projectUniqueName": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj",
       "projectName": "Solution.Infrastructure",
-      "projectPath": "V:\\Portfolio\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj",
+      "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Infrastructure\\Solution.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\setia\\.nuget\\packages\\",
-      "outputPath": "V:\\Portfolio\\Solution\\Solution.Infrastructure\\obj\\",
+      "outputPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -287,8 +287,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "V:\\Portfolio\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj": {
-              "projectPath": "V:\\Portfolio\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj"
+            "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj": {
+              "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Interfaces\\Solution.Interfaces.csproj"
             }
           }
         }

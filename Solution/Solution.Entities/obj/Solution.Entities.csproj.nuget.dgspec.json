@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "V:\\Portfolio\\Solution\\Solution.Entities\\Solution.Entities.csproj": {}
+    "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Entities\\Solution.Entities.csproj": {}
   },
   "projects": {
-    "V:\\Portfolio\\Solution\\Solution.Entities\\Solution.Entities.csproj": {
+    "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Entities\\Solution.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "V:\\Portfolio\\Solution\\Solution.Entities\\Solution.Entities.csproj",
+        "projectUniqueName": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Entities\\Solution.Entities.csproj",
         "projectName": "Solution.Entities",
-        "projectPath": "V:\\Portfolio\\Solution\\Solution.Entities\\Solution.Entities.csproj",
+        "projectPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Entities\\Solution.Entities.csproj",
         "packagesPath": "C:\\Users\\setia\\.nuget\\packages\\",
-        "outputPath": "V:\\Portfolio\\Solution\\Solution.Entities\\obj\\",
+        "outputPath": "V:\\gitprojs\\varun46.github.io\\Solution\\Solution.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
