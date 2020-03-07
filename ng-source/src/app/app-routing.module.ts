@@ -12,8 +12,8 @@ const routes: Routes = [
   },
   {
     path:'remote',
-    loadChildren: () => import('./modules/remote-details/remote-details-routing.module')
-                      .then(m => m.RemoteDetailsRoutingModule)
+    loadChildren: () => import('./modules/remote-details/remote-details.module')
+                      .then(m => m.RemoteDetailsModule)
   },
   {
     path:'',
