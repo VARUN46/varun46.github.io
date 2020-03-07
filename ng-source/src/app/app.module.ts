@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LocalDetailsModule } from './modules/local-details/local-details.module';
 import { RemoteDetailsModule } from './modules/remote-details/remote-details.module';
-import { AboutAppDetailsModule } from './modules/about-app-details/about-app-details.module';
 import { HomeComponent } from './components/home/home.component';
 import { Notfound404Component } from './components/notfound404/notfound404.component';
 import { HomeListItemComponent } from './components/home-list-item/home-list-item.component';
@@ -24,7 +23,6 @@ import { HomeListItemComponent } from './components/home-list-item/home-list-ite
     HttpClientModule,
     LocalDetailsModule,
     RemoteDetailsModule,
-    AboutAppDetailsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
