@@ -1,8 +1,0 @@
-V:\Portfolio\Solution\Solution.Entities\bin\Release\netstandard2.0\Solution.Entities.deps.json
-V:\Portfolio\Solution\Solution.Entities\bin\Release\netstandard2.0\Solution.Entities.dll
-V:\Portfolio\Solution\Solution.Entities\bin\Release\netstandard2.0\Solution.Entities.pdb
-V:\Portfolio\Solution\Solution.Entities\obj\Release\netstandard2.0\Solution.Entities.csprojAssemblyReference.cache
-V:\Portfolio\Solution\Solution.Entities\obj\Release\netstandard2.0\Solution.Entities.AssemblyInfoInputs.cache
-V:\Portfolio\Solution\Solution.Entities\obj\Release\netstandard2.0\Solution.Entities.AssemblyInfo.cs
-V:\Portfolio\Solution\Solution.Entities\obj\Release\netstandard2.0\Solution.Entities.dll
-V:\Portfolio\Solution\Solution.Entities\obj\Release\netstandard2.0\Solution.Entities.pdb
