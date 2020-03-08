@@ -16,6 +16,11 @@ const routes: Routes = [
                       .then(m => m.RemoteDetailsModule)
   },
   {
+    path:'apps',
+    loadChildren: () => import('./modules/apps/apps.module')
+                        .then(m => m.AppsModule)
+  },
+  {
     path:'',
     pathMatch:'full',
     component:HomeComponent  
