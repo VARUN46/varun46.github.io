@@ -1,1 +1,9 @@
-<p>app works!</p>
+<div id="notes-app-wrapper">
+<div class="row" id="notes">
+<app-note-item [class]="appNoteItemClass" isNew="Y"></app-note-item>
+
+<app-note-item [class]="appNoteItemClass" isNew="N"
+*ngFor="let i of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]"></app-note-item>
+
+</div>
+</div>

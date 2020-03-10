@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  constructor() { }
+
+  appNoteItemClass :string;
+  constructor() { 
+    this.appNoteItemClass = 'col-3 slds-m-vertical_small';
+  }
 
   ngOnInit(): void {
   }
