@@ -1,32 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LocalDetailsModule } from './modules/local-details/local-details.module';
-import { RemoteDetailsModule } from './modules/remote-details/remote-details.module';
-import { HomeComponent } from './components/home/home.component';
-import { Notfound404Component } from './components/notfound404/notfound404.component';
-import { HomeListItemComponent } from './components/home-list-item/home-list-item.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
+import { MyDetailsComponent } from './my-details/my-details.component';
+import { MyWorkExperienceComponent } from './my-work-experience/my-work-experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavigationComponent,
     HomeComponent,
-    Notfound404Component,
-    HomeListItemComponent,
+    MyDetailsComponent,
+    MyWorkExperienceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    LocalDetailsModule,
-    RemoteDetailsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  
- }
+export class AppModule { }

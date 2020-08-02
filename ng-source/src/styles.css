@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --main-color:#311B92;
+    --secondary-color:#FFF;
+    --border-1:4px;
+}
+
+
+body,
+.btn{
+    background: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.bg-dynamic{
+    background: var(--main-color);
+}
+

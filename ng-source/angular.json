@@ -25,10 +25,10 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -121,10 +121,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "ng-source",
-  "cli": {
-    "analytics": "8d4fe0e4-81b5-460f-b7e6-dd4d095ad82d"
-  }
+    }},
+  "defaultProject": "ng-source"
 }
