@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { MyDetailsComponent } from './my-details/my-details.component';
 import { MyWorkExperienceComponent } from './my-work-experience/my-work-experience.component';
+import { BitBlogComponent } from './bit-blog/bit-blog.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MyWorkExperienceComponent } from './my-work-experience/my-work-experien
     NavigationComponent,
     HomeComponent,
     MyDetailsComponent,
-    MyWorkExperienceComponent
+    MyWorkExperienceComponent,
+    BitBlogComponent
   ],
   imports: [
     BrowserModule,
