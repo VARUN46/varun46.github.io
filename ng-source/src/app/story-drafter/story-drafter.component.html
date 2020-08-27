@@ -1,0 +1,27 @@
+<button class="btn btn-sm btn-info" (click)="toggleTips()">{{ toggleMessageData[showTips] }}</button>
+<div class="jumbotron bg-info" *ngIf="showTips">
+    <ul style="color:#000;" class="list-group">
+        <li class="list-group-item">Keep Content Precise and Exact.</li>
+        <li class="list-group-item">Do Not Use More Than 1500 words.</li>
+    </ul>
+</div>
+<div class="form-group">
+    <p>Total Number of Characters: {{storyDraftCreate.charactersCount}}</p>
+    <p>Total Number of Words: {{storyDraftCreate.wordsCount}}</p>
+</div>
+<div class="form-group">
+    <input type="text" class="form-control"  [(ngModel)]="storyDraftCreate.title" placeholder="One Good Title To Catch Attention" (keyup)="countOnKeyUp()" />
+</div>
+<div *ngFor="let paraNumber of paragraphTracker" class="form-group">
+    <textarea [(ngModel)]="storyDraftCreate.paragraphs[paraNumber]" rows="10" class="form-control" placeholder="Some Good Content For Paragraph" (keyup)="countOnKeyUp()"></textarea>
+</div>
+
+<div class="form-group">
+    <textarea [(ngModel)]="storyDraftCreate.summary" rows="5" class="form-control" placeholder="A Summary To Sum Up Everything" (keyup)="countOnKeyUp()"></textarea>
+</div>
+<div class="form-group">
+
+<button (click)="addPara()" class="btn btn-sm btn-success">Add Paragraph</button>
+<button (click)="finalizeStory()" class="btn btn-sm btn-success">Finalized !!</button>
+
+</div> 

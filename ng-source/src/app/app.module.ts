@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { MyDetailsComponent } from './my-details/my-details.component';
 import { MyWorkExperienceComponent } from './my-work-experience/my-work-experience.component';
 import { BitBlogComponent } from './bit-blog/bit-blog.component';
+import { StoryDrafterComponent } from './story-drafter/story-drafter.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { BitBlogComponent } from './bit-blog/bit-blog.component';
     HomeComponent,
     MyDetailsComponent,
     MyWorkExperienceComponent,
-    BitBlogComponent
+    BitBlogComponent,
+    StoryDrafterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
