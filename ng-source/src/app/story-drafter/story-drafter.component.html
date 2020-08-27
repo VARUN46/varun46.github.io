@@ -8,6 +8,10 @@
 <div class="form-group">
     <p>Total Number of Characters: {{storyDraftCreate.charactersCount}}</p>
     <p>Total Number of Words: {{storyDraftCreate.wordsCount}}</p>
+    <p>Status: {{storyDraftCreate.draftStatus}}</p>
+</div>
+<div class="form-group">
+    <button (click)="reset()" class="btn btn-danger">Reset Data</button>
 </div>
 <div class="form-group">
     <input type="text" class="form-control"  [(ngModel)]="storyDraftCreate.title" placeholder="One Good Title To Catch Attention" (keyup)="countOnKeyUp()" />

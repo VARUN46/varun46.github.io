@@ -5,4 +5,5 @@ export class storyDraft{
     public summary: string;
     public charactersCount: number;
     public wordsCount: number;
+    public draftStatus: string;
 }
