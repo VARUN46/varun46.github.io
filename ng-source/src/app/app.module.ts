@@ -10,6 +10,8 @@ import { MyWorkExperienceComponent } from './my-work-experience/my-work-experien
 import { BitBlogComponent } from './bit-blog/bit-blog.component';
 import { StoryDrafterComponent } from './story-drafter/story-drafter.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StoryFinalComponent } from './story-final/story-final.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MyDetailsComponent,
     MyWorkExperienceComponent,
     BitBlogComponent,
-    StoryDrafterComponent
+    StoryDrafterComponent,
+    StoryFinalComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,11 @@
 }
 
 
-body,
+
+body{
+    background:#FFF;
+    color:#000;
+}
 .btn{
     background: var(--main-color);
     color: var(--secondary-color);

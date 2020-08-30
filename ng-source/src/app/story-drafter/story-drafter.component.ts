@@ -97,9 +97,6 @@ export class StoryDrafterComponent implements OnInit {
 
 
 
-   finalizeStory(){
-
-   }
 
 
 }

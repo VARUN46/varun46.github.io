@@ -1,0 +1,10 @@
+:host{
+    text-align: center;
+}
+
+:host a{
+    display: block;   
+}
+h1{
+    line-height: 5em;
+}

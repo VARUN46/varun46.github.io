@@ -1,0 +1,8 @@
+<h1>{{printData.title}}</h1>
+<p>Total Read Time: {{readTimeMinutes}} minutes.</p>
+
+<p *ngFor="let paragraph of printData.paragraphs" >{{paragraph}}</p>
+<p>To Summarize everything,</p>
+<p class="summary">{{printData.summary}}</p>
+
+<p>Thank You For Reading.</p>
