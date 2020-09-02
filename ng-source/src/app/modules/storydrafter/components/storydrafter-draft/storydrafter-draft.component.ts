@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { storyDraft } from '../../entities/storyDraft';
+import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
 
 
 @Component({
@@ -10,20 +11,20 @@ import { storyDraft } from '../../entities/storyDraft';
 export class StorydrafterDraftComponent implements OnInit {
 
   public storyDraftCreate: storyDraft;
-  public showTips: number = 0;
-  public toggleMessageData: object;
   public paragraphTracker: number[];
   private draftLocalStorageKey = "draft";
+  public percentageLimit: number = 0;
 
-  constructor() {
+  constructor(private _bottomSheet: MatBottomSheet) {
     this.initDataParam();
-    this.toggleMessageData = {
-      1:'Hide Tips',
-      0:'Show Tips'
-    };
+   
 
   }
 
+
+  openTipsSheet(): void {
+    this._bottomSheet.open(BottomStoryDrafterTipsSheet);
+  }
 
   initDataParam(){ 
     this.storyDraftCreate = new storyDraft();
@@ -41,6 +42,7 @@ export class StorydrafterDraftComponent implements OnInit {
 
   reset(){
     this.initDataParam();
+    this.calculatePercentage();      
     localStorage.clear();
   }
 
@@ -52,7 +54,7 @@ export class StorydrafterDraftComponent implements OnInit {
       this.storyDraftCreate.paragraphs = [];
       this.paragraphTracker = [];
       this.storyDraftCreate = JSON.parse(localStorageData);
-      
+      this.calculatePercentage();  
       for(let v=0;v<this.storyDraftCreate.paragraphs.length;v++){
         this.paragraphTracker.push(v);
       } 
@@ -60,9 +62,6 @@ export class StorydrafterDraftComponent implements OnInit {
     }
   }
 
-  toggleTips(){
-    this.showTips = this.showTips==0 ? 1 : 0;
-   }
 
    addPara(){
      this.storyDraftCreate.paragraphs.push("");
@@ -81,9 +80,9 @@ export class StorydrafterDraftComponent implements OnInit {
   
     
     this.storyDraftCreate.draftStatus="Saved Locally";
-    localStorage.setItem(this.draftLocalStorageKey,JSON.stringify(this.storyDraftCreate));
-   
-    }
+    localStorage.setItem(this.draftLocalStorageKey,JSON.stringify(this.storyDraftCreate));   
+    this.calculatePercentage();  
+  }
 
     countWords(stringVal: string){
       let lengthResult = 0;
@@ -95,7 +94,24 @@ export class StorydrafterDraftComponent implements OnInit {
       return lengthResult;
     }
 
+    calculatePercentage(){
+      this.percentageLimit = (this.storyDraftCreate.wordsCount/15);//count*1500/100
+    }
 
 
 
+
+}
+
+@Component({
+  selector:'bottom-storydrafter-tips-sheet',
+  templateUrl:'./bottom-storydrafter-tips.html'
+})
+export class BottomStoryDrafterTipsSheet{
+  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomStoryDrafterTipsSheet>) {}
+
+  openLink(event: MouseEvent): void {
+    this._bottomSheetRef.dismiss();
+    event.preventDefault();
+  }
 }

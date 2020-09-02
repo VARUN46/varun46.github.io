@@ -16,7 +16,11 @@ body{
     color: var(--secondary-color);
 }
 
+
 .bg-dynamic{
     background: var(--main-color);
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

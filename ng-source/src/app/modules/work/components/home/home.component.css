@@ -12,9 +12,12 @@
     font-size: 6em;
 }
 
+.line{
+    line-height: 4rem;
+}
+
 .btn-more{
     font-weight: bolder;
-    border:var(--border-1) solid var(--secondary-color);
 }
 
 #home-entry-details{

@@ -3,6 +3,10 @@ import { StorydrafterDraftComponent } from './components/storydrafter-draft/stor
 import { StorydrafterPrintComponent } from './components/storydrafter-print/storydrafter-print.component';
 import { NgModule } from '@angular/core';
 import { StoryFinalGuard } from './guards/story-final.guard';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatInputModule} from '@angular/material/input';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+
 
 const routes: Routes = [
     { path:'draft', component:StorydrafterDraftComponent },
@@ -10,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports:[RouterModule.forChild(routes)],
-    exports:[RouterModule]
+    imports:[RouterModule.forChild(routes), MatInputModule, MatProgressBarModule, MatBottomSheetModule],
+    exports:[RouterModule, MatInputModule, MatProgressBarModule, MatBottomSheetModule]
 })
 export class StoryDrafterRouting{ }

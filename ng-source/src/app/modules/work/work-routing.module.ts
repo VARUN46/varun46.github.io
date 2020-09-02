@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { MyDetailsComponent } from './components/my-details/my-details.component';
 import { MyWorkExperienceComponent } from './components/my-work-experience/my-work-experience.component';
 import { HomeComponent } from './components/home/home.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 const routes: Routes = [  
 { path:'details', component:MyDetailsComponent },
@@ -11,7 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forChild(routes), MatButtonModule],
+  exports: [RouterModule, MatButtonModule]
 })
 export class WorkRoutingModule { }

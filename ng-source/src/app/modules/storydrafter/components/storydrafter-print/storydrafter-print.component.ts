@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { storyDraft } from '../../entities/storyDraft';
 import { AppScopeService } from '../../../../services/app-scope.service';
 
@@ -7,7 +7,7 @@ import { AppScopeService } from '../../../../services/app-scope.service';
   templateUrl: './storydrafter-print.component.html',
   styleUrls: ['./storydrafter-print.component.css']
 })
-export class StorydrafterPrintComponent implements OnInit {
+export class StorydrafterPrintComponent implements AfterViewInit {
 
   public printData: storyDraft;
   public readTimeMinutes: number;
@@ -21,18 +21,17 @@ export class StorydrafterPrintComponent implements OnInit {
       this.printData.wordsCount = 0;
       
     }
-    this.readTimeMinutes = this.printData!==null?Math.ceil(this.printData.wordsCount/20):0;
-   }
+    this.readTimeMinutes = this.printData!==null?Math.ceil(this.printData.wordsCount/50):0;
+    document.body.style.background="#FFF";
+    document.body.style.color="#000"; 
+  }
   ngAfterViewInit(): void {
+    
     window.print(); 
   }
   
 
-  ngOnInit(): void {
-    document.body.style.background="#FFF";
-    document.body.style.color="#000";
-   
-  }
+  
 
 
 }
