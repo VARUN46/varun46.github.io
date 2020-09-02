@@ -1,13 +1,13 @@
-import { Component, OnInit, AfterViewChecked, AfterViewInit } from '@angular/core';
-import { AppScopeService } from '../services/app-scope.service';
-import { storyDraft } from '../story-drafter/entities/storyDraft';
+import { Component, OnInit } from '@angular/core';
+import { storyDraft } from '../../entities/storyDraft';
+import { AppScopeService } from '../../../../services/app-scope.service';
 
 @Component({
-  selector: 'app-story-final',
-  templateUrl: './story-final.component.html',
-  styleUrls: ['./story-final.component.css']
+  selector: 'app-storydrafter-print',
+  templateUrl: './storydrafter-print.component.html',
+  styleUrls: ['./storydrafter-print.component.css']
 })
-export class StoryFinalComponent implements OnInit,AfterViewInit {
+export class StorydrafterPrintComponent implements OnInit {
 
   public printData: storyDraft;
   public readTimeMinutes: number;
@@ -33,5 +33,6 @@ export class StoryFinalComponent implements OnInit,AfterViewInit {
     document.body.style.color="#000";
    
   }
+
 
 }

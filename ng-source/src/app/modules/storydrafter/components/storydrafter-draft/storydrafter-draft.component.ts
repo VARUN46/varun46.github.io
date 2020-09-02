@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { storyDraft } from './entities/storyDraft';
+import { storyDraft } from '../../entities/storyDraft';
 
 
 @Component({
-  selector: 'app-story-drafter',
-  templateUrl: './story-drafter.component.html',
-  styleUrls: ['./story-drafter.component.css']
+  selector: 'app-storydrafter-draft',
+  templateUrl: './storydrafter-draft.component.html',
+  styleUrls: ['./storydrafter-draft.component.css']
 })
-export class StoryDrafterComponent implements OnInit {
+export class StorydrafterDraftComponent implements OnInit {
 
   public storyDraftCreate: storyDraft;
   public showTips: number = 0;
@@ -22,8 +22,8 @@ export class StoryDrafterComponent implements OnInit {
       0:'Show Tips'
     };
 
-
   }
+
 
   initDataParam(){ 
     this.storyDraftCreate = new storyDraft();
@@ -94,7 +94,6 @@ export class StoryDrafterComponent implements OnInit {
       }
       return lengthResult;
     }
-
 
 
 

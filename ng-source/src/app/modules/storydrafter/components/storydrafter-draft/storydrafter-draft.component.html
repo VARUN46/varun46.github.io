@@ -1,4 +1,3 @@
-
 <div class="form-group">
     <p>Total Number of Characters: {{storyDraftCreate.charactersCount}}</p>
     <p>Total Number of Words: {{storyDraftCreate.wordsCount}}</p>
@@ -9,7 +8,7 @@
         <a href="javascript:void(0);" class="btn btn-sm btn-info" (click)="toggleTips()">{{ toggleMessageData[showTips] }}</a>
         <button (click)="reset()" class="btn btn-sm btn-danger">Reset Data</button>        
         <button (click)="addPara()" class="btn btn-sm btn-info">Add Paragraph</button>
-        <a class="btn btn-sm btn-success finalize-btn" routerLink="/story-final">Done and Proceed !!</a>
+        <a class="btn btn-sm btn-success finalize-btn" routerLink="/story/print">Done and Proceed !!</a>
     </div>
 </div>
 <div class="form-group">
