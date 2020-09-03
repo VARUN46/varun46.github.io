@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { MyDetailsComponent } from './components/my-details/my-details.component';
 import { MyWorkExperienceComponent } from './components/my-work-experience/my-work-experience.component';
 import { HomeComponent } from './components/home/home.component';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 
 const routes: Routes = [  
@@ -13,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes), MatButtonModule],
-  exports: [RouterModule, MatButtonModule]
+  imports: [ RouterModule.forChild(routes), MatButtonModule, MatIconModule ],
+  exports: [ RouterModule, MatButtonModule, MatIconModule ]
 })
 export class WorkRoutingModule { }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { storyDraft } from '../../entities/storyDraft';
-import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
+import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 
 
 @Component({
@@ -17,8 +17,6 @@ export class StorydrafterDraftComponent implements OnInit {
 
   constructor(private _bottomSheet: MatBottomSheet) {
     this.initDataParam();
-   
-
   }
 
 
@@ -82,7 +80,7 @@ export class StorydrafterDraftComponent implements OnInit {
     this.storyDraftCreate.draftStatus="Saved Locally";
     localStorage.setItem(this.draftLocalStorageKey,JSON.stringify(this.storyDraftCreate));   
     this.calculatePercentage();  
-  }
+    }
 
     countWords(stringVal: string){
       let lengthResult = 0;
@@ -95,11 +93,8 @@ export class StorydrafterDraftComponent implements OnInit {
     }
 
     calculatePercentage(){
-      this.percentageLimit = (this.storyDraftCreate.wordsCount/15);//count*1500/100
+      this.percentageLimit = (this.storyDraftCreate.wordsCount/15);//(count/1500)*100
     }
-
-
-
 
 }
 

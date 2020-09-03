@@ -1,3 +1,12 @@
+<div id="story-actions" class="card hide-print">
+    <div class="card-body">
+    <div class="btn-group">    
+    <a class="btn btn-sm btn-success" (click)="onPrint()" href="javascript:void(0);">Print</a>
+    <a class="btn btn-sm btn-warning" routerLink="/story/draft">Edit</a>
+    </div>
+    </div>
+</div><br/>
+
 <h1>{{printData.title}}</h1>
 <p>Total Read Time: {{readTimeMinutes}} minutes.</p>
 

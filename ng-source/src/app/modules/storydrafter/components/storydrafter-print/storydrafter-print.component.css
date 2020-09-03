@@ -9,3 +9,9 @@ p{
 .summary{
     font-style: italic;
 }
+
+@media print{
+    .hide-print{
+        display: none;
+    }
+}

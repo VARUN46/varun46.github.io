@@ -7,7 +7,7 @@ import { AppScopeService } from '../../../../services/app-scope.service';
   templateUrl: './storydrafter-print.component.html',
   styleUrls: ['./storydrafter-print.component.css']
 })
-export class StorydrafterPrintComponent implements AfterViewInit {
+export class StorydrafterPrintComponent{
 
   public printData: storyDraft;
   public readTimeMinutes: number;
@@ -25,7 +25,7 @@ export class StorydrafterPrintComponent implements AfterViewInit {
     document.body.style.background="#FFF";
     document.body.style.color="#000"; 
   }
-  ngAfterViewInit(): void {
+  onPrint(): void {
     
     window.print(); 
   }

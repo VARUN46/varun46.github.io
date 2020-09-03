@@ -23,3 +23,19 @@
 #home-entry-details{
     margin-top: 50px;
 }
+
+#floating-icons{
+    position: fixed;
+    left:10px;
+    bottom:10px;
+}
+
+#floating-icons ul{
+    padding:0;
+    list-style: none;
+}
+
+
+#floating-icons ul li{
+    margin-bottom:10px;
+}
