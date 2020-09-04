@@ -1,0 +1,19 @@
+.open-in-new mat-icon{
+    font-size:1rem;
+}
+
+.app-icon{
+    font-size: 3rem;
+}
+
+.app-wrapper{
+    margin-bottom:30px;
+}
+
+.appzz-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin:20px;
+    font-size: 3rem;
+}
