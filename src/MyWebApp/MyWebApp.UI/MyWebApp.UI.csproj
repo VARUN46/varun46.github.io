@@ -3,7 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <RunAOTCompilation>true</RunAOTCompilation>
-    <DisableGitAutoCRLFInPublishOutput>true</DisableGitAutoCRLFInPublishOutput>
+     <BlazorCacheBootResources>false</BlazorCacheBootResources>
+    
   </PropertyGroup>
 
   <ItemGroup>
