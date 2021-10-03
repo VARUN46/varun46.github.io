@@ -5,3 +5,10 @@
   margin-top:5%;
   margin-bottom:5%;
 }
+
+@media all and (max-width:600px){
+  #my-profile-details-card{
+    width:90%;
+    margin-left:5%;
+  }
+}
