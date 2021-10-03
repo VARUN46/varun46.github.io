@@ -1,0 +1,5 @@
+<div class="container">
+<div *ngFor="let project of projects" class="project">
+<app-portfolio-item-card [title]="project.name" [description]="project.description" [link]="project.html_url"></app-portfolio-item-card>
+</div>
+</div>

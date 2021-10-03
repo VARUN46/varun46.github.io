@@ -1,0 +1,17 @@
+#loader-component
+{
+  position: fixed;
+  width:100%;
+  height: 100%;
+  background: #FFF;
+  top:0;
+  left:0;
+  font-size: 10rem;
+  z-index:100;
+  background: var(--themecolorprimary);
+  color:var(--analogous1);
+}
+
+#loader-component .spinner-border{
+  margin-top: 300px;
+}

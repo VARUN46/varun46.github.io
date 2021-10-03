@@ -1,0 +1,21 @@
+#pre-navbar{
+  height:20px;
+  width:100%;
+  position: relative;
+  background:var(--themecolordark);
+}
+#navbar{
+  background: var(--themecolorprimary)!important;
+}
+
+.nav-link,
+.navbar-brand{
+  color: #fff !important;
+
+}
+
+.navbar-toggler{
+  background:#FFF;
+  color:var(--themecolordark);
+}
+
