@@ -10,6 +10,7 @@ import { FooterComponent } from './commons/components/footer/footer.component';
 import { LoaderComponent } from './commons/components/loader/loader.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProfileCardComponent } from './commons/components/core/profile-card/profile-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     FooterComponent,
     LoaderComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ProfileCardComponent
   ],
   imports: [
     BrowserModule,
