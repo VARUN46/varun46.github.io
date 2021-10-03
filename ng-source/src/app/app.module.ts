@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { InfoModule } from 'src/modules/info/info.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileCardComponent } from './commons/components/core/profile-card/profile-card.component';
 import { SkillsetComponent } from './pages/skillset/skillset.component';
 import { DataListCardComponent } from './commons/components/core/data-list-card/data-list-card.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PortfolioItemCardComponent } from './commons/components/core/portfolio-item-card/portfolio-item-card.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { DataListCardComponent } from './commons/components/core/data-list-card/
     NotFoundComponent,
     ProfileCardComponent,
     SkillsetComponent,
-    DataListCardComponent
+    DataListCardComponent,
+    PortfolioComponent,
+    PortfolioItemCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InfoModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent,NavbarComponent,LoaderComponent,FooterComponent]

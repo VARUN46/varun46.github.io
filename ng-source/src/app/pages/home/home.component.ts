@@ -1,6 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { LoaderService } from 'src/app/commons/services/loader/loader.service';
-import { IntroComponent } from 'src/modules/info/intro/intro.component';
 
 @Component({
   selector: 'app-home',
