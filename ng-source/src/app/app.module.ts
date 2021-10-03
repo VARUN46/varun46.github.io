@@ -11,6 +11,8 @@ import { LoaderComponent } from './commons/components/loader/loader.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileCardComponent } from './commons/components/core/profile-card/profile-card.component';
+import { SkillsetComponent } from './pages/skillset/skillset.component';
+import { DataListCardComponent } from './commons/components/core/data-list-card/data-list-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProfileCardComponent } from './commons/components/core/profile-card/pro
     FooterComponent,
     LoaderComponent,
     NotFoundComponent,
-    ProfileCardComponent
+    ProfileCardComponent,
+    SkillsetComponent,
+    DataListCardComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,7 @@ export class ProfileCardComponent implements OnInit {
   @Input() introduction: string = '';
   @Input() moreCsv = '';
   @Input() visitLink: string | undefined;
+  @Input() visitLinkName: string | undefined;
 
   moreArray: string[] = [];
 

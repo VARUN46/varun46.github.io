@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-header datalist-card-header">
+    {{title}}
+  </div>
+  <ul *ngIf="listItemsArray.length>0" class="list-group list-group-flush">
+    <li *ngFor="let item of listItemsArray" class="list-group-item">{{item}}</li>
+  </ul>
+</div>

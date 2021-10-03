@@ -1,14 +1,14 @@
-<div class="card" style="width: 18rem;">
+<div class="card">
   <img [src]="profileUrl" class="card-img-top" alt="Profile Pic">
   <div class="card-body">
     <h5 class="card-title">{{fullName}}</h5>
     <p class="card-text">{{introduction}}</p>
-    <p>More..</p>
+    <p *ngIf="moreArray.length > 0">More..</p>
   </div>
-  <ul class="list-group list-group-flush">
+  <ul *ngIf="moreArray.length > 0" class="list-group list-group-flush">
     <li *ngFor="let moreData of moreArray" class="list-group-item">{{moreData}}</li>
   </ul>
-  <div *ngIf="visitLink" class="card-body">
-    <a href="#" class="card-link">{{visitLink}}</a>
+  <div *ngIf="visitLink && visitLinkName" class="card-body">
+    <a [routerLink]="visitLink" class="btn btn-info btn-profile-card">{{visitLinkName}}</a>
   </div>
 </div>
