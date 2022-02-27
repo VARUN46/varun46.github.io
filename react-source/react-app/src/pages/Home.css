@@ -1,0 +1,18 @@
+#id-card{
+    max-width: 100%;
+}
+
+#id-card .exper{
+    font-size: 6rem;
+}
+
+#id-card .card-title{
+    text-align: center;
+}
+#id-card .location{
+    font-size: 3rem;
+}
+
+.big-icon{
+    font-size: 4rem;
+}
