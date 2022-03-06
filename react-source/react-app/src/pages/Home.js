@@ -3,7 +3,6 @@ import Body from '../commons/Body';
 import './Home.css';
 import { FaSearchLocation } from "react-icons/fa";
 import { AiOutlineCloudServer } from "react-icons/ai";
-import { FaRegSmileBeam } from "react-icons/fa";
 
 function Home(){
     return (
@@ -38,7 +37,6 @@ function Home(){
         <p>The database technologies includes SQL and No-SQL namely SQL Server, MySQL, MongoDB and RedisDB.  </p>
         <p>The cloud platforms that i had explored are Azure and AWS. My main expertise is in Azure Cloud.</p>
         <p>Also, for microservices i had worked on Docker platform and very basic in Kubernetes.</p>
-        <p>Thank you so much for investing your time on reading this. <FaRegSmileBeam/></p>
             </div>
           </div>
         </div>
