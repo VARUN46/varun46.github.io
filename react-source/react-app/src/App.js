@@ -1,0 +1,33 @@
+import React from "react";
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Navigation from "./commons/Navigation";
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+
+import {
+  HashRouter as Router,
+  Routes as Switch,
+  Route,
+  Link,
+  useParams,
+  useRouteMatch
+} from "react-router-dom";
+
+function App() {
+  return (
+      <div>
+    <Router>
+    <Navigation/>
+    <Switch>
+      <Route exact path="/" element={<Home/>} />
+      <Route path="/portfolio" element={<Portfolio/>} />
+      <Route path="/contact" element={<Contact/>} />
+        </Switch>
+    </Router>
+    </div>
+  );
+}
+
+export default App;
