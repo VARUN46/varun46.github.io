@@ -2,9 +2,9 @@ import React from "react";
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Navigation from "./commons/Navigation";
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contact from './pages/Contact/Contact';
 
 import {
   HashRouter as Router,
