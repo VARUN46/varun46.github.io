@@ -1,5 +1,5 @@
 import React from "react";
-import Body from '../commons/Body';
+import Body from '../../commons/Body';
 import './Home.css';
 import { FaSearchLocation } from "react-icons/fa";
 import { AiOutlineCloudServer } from "react-icons/ai";
@@ -9,7 +9,7 @@ function Home(){
     <Body children={
       <div id="id-card" className="card">
   <div className="card-body">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-4">
             <img src="https://res.cloudinary.com/dfptza4sj/image/upload/v1633241218/Portfolio/Me_hfwalc.png" className="card-img-top" alt="Varun Setia"/>
@@ -19,16 +19,17 @@ function Home(){
             <p className="card-text">Hey, this is my introduction!</p>
             <p className="location"><FaSearchLocation/> Delhi</p>
             <p> I am a full stack developer, my main area of focus is<span className="big-icon"> <AiOutlineCloudServer/> </span>cloud oriented development. </p>
-            <p>6X Certified in Azure Cloud!</p>
+            <p>7X Certified in Azure Cloud!</p>
+            <p>Alteryx Core Certified!</p>
             <p>I am system designing enthusiast.</p>
-            <p><span className="exper">4+ Years </span></p>
+            <p><span className="exper">5 Years </span></p>
               
             </div>
           </div>
         </div>
   </div>
   <div className="card-body">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
         <p>I have worked across many verticals of technology. I have developed enterprise applications by following proper design and architecture guidelines. I had focused mainly on developing scalable microservices solution. The solutions built are majorly deployed on cloud infrastructure.</p>

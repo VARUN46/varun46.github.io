@@ -1,3 +1,7 @@
 #body{
-    margin-left:300px;
+    margin-left:0;
+}
+
+#error-body{
+    padding:50px;
 }
