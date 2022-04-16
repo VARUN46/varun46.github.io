@@ -1,13 +1,31 @@
 import React from 'react';
 import './Body.css';
+import Error from './Error/Error';
 
-function Body(props){
-    return (<div id="body">
+///This class Body is also error boundary for all the components
+class Body extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { hasError: false,errorInfo:'' };
+      }
+      static getDerivedStateFromError(error,errorInfo) {
+        // Update state so the next render will show the fallback UI.
+        return { hasError: true,errorInfo };
+      }
+
+    render() 
+    {
+    if(this.state.hasError){
+        return <Error errorInfo={this.state.errorInfo} />;
+    }
+
+    return(<div className="body">
         <div className="container-fluid">
-        { !props.error && props.children}
-        { props.error && <div className="card" id="error-body"><div className="alert alert-danger">{props.error}</div></div> }
+          {this.props.error && <Error errorInfo={this.props.error} />}
+        { !this.props.error && this.props.children}
         </div>
-    </div>);
+    </div>)
+    };
 }
 
 export default Body;

@@ -9,24 +9,21 @@ import Contact from './pages/Contact/Contact';
 import {
   HashRouter as Router,
   Routes as Switch,
-  Route,
-  Link,
-  useParams,
-  useRouteMatch
+  Route
 } from "react-router-dom";
 
 function App() {
   return (
-      <div>
+      <>
     <Router>
-    <Navigation/>
+      <Navigation/>
     <Switch>
       <Route exact path="/" element={<Home/>} />
       <Route path="/portfolio" element={<Portfolio/>} />
       <Route path="/contact" element={<Contact/>} />
         </Switch>
     </Router>
-    </div>
+    </>
   );
 }
 
