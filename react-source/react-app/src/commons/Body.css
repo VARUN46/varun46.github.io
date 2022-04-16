@@ -1,7 +1,12 @@
-#body{
+body{
+    background: rgb(230,230,230);
+}
+.body{
     margin-left:0;
+    position: relative;
+    min-height: 100%;
 }
 
-#error-body{
+.error-body{
     padding:50px;
 }
