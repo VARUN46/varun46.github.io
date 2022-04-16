@@ -17,16 +17,16 @@ import {
 
 function App() {
   return (
-      <div>
+      <>
     <Router>
-    <Navigation/>
+      <Navigation/>
     <Switch>
       <Route exact path="/" element={<Home/>} />
       <Route path="/portfolio" element={<Portfolio/>} />
       <Route path="/contact" element={<Contact/>} />
         </Switch>
     </Router>
-    </div>
+    </>
   );
 }
 

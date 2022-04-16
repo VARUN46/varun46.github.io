@@ -3,7 +3,7 @@ import './Contact.css';
 
 function Contact(){
     return (<Body children={
-        <div id="contact-card" className='card'>
+        <div className="card contact-card">
         <h2>Contact</h2>
         <p>Planning something in here!!!</p>
         </div>

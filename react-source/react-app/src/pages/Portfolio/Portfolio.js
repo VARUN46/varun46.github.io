@@ -14,7 +14,6 @@ function Portfolio(){
             setError(`OOPS!! Cannot fetch portfolio details right now !! Reason: ${error.response.data.message}`);
         })
             .then(response=>{    
-                console.log(response); 
                 const responseCollection = [];     
                 response.data.forEach(githubRepoItem=>{
                     responseCollection.push({ full_name:githubRepoItem.full_name, description: githubRepoItem.description });
@@ -22,9 +21,11 @@ function Portfolio(){
             setCardItemsArray(responseCollection);
         });
     });
-
+    
+    //ToDo: Add Error boundary
+    //ToDo: Add Child Component inside body component 
     return (<Body children={
-        <div id="portfolio-card" className="card">
+        <div className="card portfolio-card">
             <div className="card-body">
             <div className="card-title">
             <h2>Portfolio</h2>

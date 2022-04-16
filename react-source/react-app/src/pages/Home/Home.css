@@ -1,18 +1,61 @@
-#id-card{
-    max-width: 100%;
+.about-pic img{
+    width:80%;
 }
 
-#id-card .exper{
-    font-size: 6rem;
-}
-
-#id-card .card-title{
+.about-pic{
+    width:35%;
+    position: absolute;
+    left:0;
+    background: #000;
+    height:100vh;
+    line-height: 100vh;
     text-align: center;
 }
-#id-card .location{
-    font-size: 3rem;
+
+.person-title{
+    font-size:5rem;
+ }
+
+ .domain-title{
+     color:rgb(120,120,120);
+ }
+
+.about-content{
+    position: absolute;
+    right:10%;
+    width:60%;
+    border: 1px solid rgb(200,200,200);
+    box-shadow: 2px 2px 2px 2px rgb(200,200,200);
+    background: #FFF;
+    padding: 20px;
+    top:100px;
+    text-align: center;
+    margin-top:200px;
 }
 
-.big-icon{
-    font-size: 4rem;
+@media all and (max-width:900px){
+    .about-content,
+    .about-pic{
+        position: relative;
+        display: block;
+        width:100%;
+        height: max-content;
+    
+    }
+    .about-pic{
+        line-height: 200px;
+    }
+    .about-pic img{
+        width: 200px;
+
+    }
+    .about-content{
+        margin-top: 0;
+        top:0;
+        right: 0;
+    }
+    .person-title{
+        font-size: 3rem;
+    }
+    
 }
