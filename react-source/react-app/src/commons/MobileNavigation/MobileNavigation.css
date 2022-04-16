@@ -35,7 +35,7 @@
 
 .showNav{
     left: 0;
-    transition: left 1s;
+    transition: left 0.5s;
 }
 
 .mobile-navigation-list a{

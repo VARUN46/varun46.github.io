@@ -1,11 +1,10 @@
 import React from "react";
 import Body from '../../commons/Body';
 import './Home.css';
-import { FaSearchLocation } from "react-icons/fa";
 
 function Home(){
     return (
-    <Body children={
+    <Body>
       <div id="id-card">
   <div className="card-body">
         <div className="container-fluid">
@@ -27,7 +26,6 @@ function Home(){
         </div>
   </div>
 </div>
-    }>
   </Body>);
 }
 

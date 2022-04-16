@@ -9,11 +9,9 @@ import Contact from './pages/Contact/Contact';
 import {
   HashRouter as Router,
   Routes as Switch,
-  Route,
-  Link,
-  useParams,
-  useRouteMatch
+  Route
 } from "react-router-dom";
+
 
 function App() {
   return (

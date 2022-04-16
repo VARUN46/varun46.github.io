@@ -6,13 +6,9 @@ import './Portfolio.css';
 
 function Portfolio(){
     const [cardItemsArray, setCardItemsArray] = useState([]);
-    const [error,setError]= useState('');
     useEffect(() => {
     
         axios.get('https://api.github.com/users/varun46/repos')
-        .catch(function(error){
-            setError(`OOPS!! Cannot fetch portfolio details right now !! Reason: ${error.response.data.message}`);
-        })
             .then(response=>{    
                 const responseCollection = [];     
                 response.data.forEach(githubRepoItem=>{
@@ -24,19 +20,17 @@ function Portfolio(){
     
     //ToDo: Add Error boundary
     //ToDo: Add Child Component inside body component 
-    return (<Body children={
+    return (<Body>
         <div className="card portfolio-card">
             <div className="card-body">
             <div className="card-title">
             <h2>Portfolio</h2>
             </div>
                 <br/>
-                {!error && 
-                <GithubCard cardItemsArray={cardItemsArray} />}
-                {error}
+                <GithubCard cardItemsArray={cardItemsArray} />
             </div>
         </div>
-    }/>);
+        </Body>);
 
 }
 
