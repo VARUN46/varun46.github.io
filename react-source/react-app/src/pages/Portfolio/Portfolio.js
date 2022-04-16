@@ -6,20 +6,23 @@ import './Portfolio.css';
 
 function Portfolio(){
     const [cardItemsArray, setCardItemsArray] = useState([]);
+    const [error,setError] = useState('');
     useEffect(() => {
-    
         axios.get('https://api.github.com/users/varun46/repos')
+        .catch((error)=>{
+            setError(error);
+        })
             .then(response=>{    
                 const responseCollection = [];     
+                if(response && response.data){
                 response.data.forEach(githubRepoItem=>{
-                    responseCollection.push({ full_name:githubRepoItem.full_name, description: githubRepoItem.description });
-            });
+                        responseCollection.push({ full_name:githubRepoItem.full_name, description: githubRepoItem.description });
+                    });
+                }
             setCardItemsArray(responseCollection);
         });
-    });
+    },[]);
     
-    //ToDo: Add Error boundary
-    //ToDo: Add Child Component inside body component 
     return (<Body>
         <div className="card portfolio-card">
             <div className="card-body">

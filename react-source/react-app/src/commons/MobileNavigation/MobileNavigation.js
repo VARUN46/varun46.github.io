@@ -3,7 +3,7 @@ import {
     Link
   } from "react-router-dom";
 import MobileNavigationHam from "./MobileNavigationHam";
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import { ImCross } from 'react-icons/im';
 
 function MobileNavigation(){

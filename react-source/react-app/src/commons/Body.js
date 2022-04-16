@@ -19,9 +19,10 @@ class Body extends React.Component {
         return <Error errorInfo={this.state.errorInfo} />;
     }
 
-    return(<div class="body">
+    return(<div className="body">
         <div className="container-fluid">
-        { this.props.children}
+          {this.props.error && <Error errorInfo={this.props.error} />}
+        { !this.props.error && this.props.children}
         </div>
     </div>)
     };
