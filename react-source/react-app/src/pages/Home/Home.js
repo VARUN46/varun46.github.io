@@ -5,7 +5,7 @@ import './Home.css';
 function Home(){
     return (
     <Body>
-      <div id="id-card">
+      <div className="id-card">
   <div className="card-body">
         <div className="container-fluid">
           <div className="row">

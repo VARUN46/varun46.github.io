@@ -1,4 +1,4 @@
-#mobile-navigation-ham{
+.mobile-navigation-ham{
     width:70px;
     height:70px;
     border: 1px solid #000;
@@ -10,7 +10,7 @@
     background: #FFF;
 }
 
-#mobile-navigation-ham .bar{
+.mobile-navigation-ham .bar{
     position: relative;
     width:80%;
     left:10%;
