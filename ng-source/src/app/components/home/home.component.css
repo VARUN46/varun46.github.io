@@ -1,0 +1,9 @@
+.full-height{
+  height: 50vh;
+}
+.contain-content{
+  overflow: hidden;
+  position: relative;
+}
+
+

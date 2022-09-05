@@ -9,6 +9,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { NavigationComponent } from './sections/navigation/navigation.component';
 import { FooterComponent } from './sections/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { LoaderComponent } from './sections/loader/loader.component';
+import { ImageOverlaySectionComponent } from './sections/image-overlay-section/image-overlay-section.component';
+import { SkillsDictionaryComponent } from './sections/skills-dictionary/skills-dictionary.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     PortfolioComponent,
     NavigationComponent,
     FooterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoaderComponent,
+    ImageOverlaySectionComponent,
+    SkillsDictionaryComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.black-bg{
+  background: #000;
+}
+
+.screen-container{
+  height: 85vh;
+}
+
+.white-text{
+  color:#FFF;
+}
+
