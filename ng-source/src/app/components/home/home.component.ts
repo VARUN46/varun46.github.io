@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { gsap, Back, Power1 } from 'gsap'
+import {    } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',

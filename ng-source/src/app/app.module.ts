@@ -9,8 +9,8 @@ import { NavigationComponent } from './sections/navigation/navigation.component'
 import { FooterComponent } from './sections/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoaderComponent } from './sections/loader/loader.component';
-import { SkillsDictionaryComponent } from './sections/skills-dictionary/skills-dictionary.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
+import { GithubRepoItemComponent } from './sections/github-repo-item/github-repo-item.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +22,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     NotFoundComponent,
     LoaderComponent,
-    SkillsDictionaryComponent
+    GithubRepoItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent,NavigationComponent,FooterComponent]

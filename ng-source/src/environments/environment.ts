@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  title: 'Varun Setia | Portfolio App'
+  title: 'Varun Setia | Portfolio App',
+  githubProfileApiUrl:'https://api.github.com/users/varun46/repos'
 };
 
 /*

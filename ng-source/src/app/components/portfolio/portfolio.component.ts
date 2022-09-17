@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from 'src/app/services/github/github.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor(public githubService:GithubService) { }
 
   ngOnInit(): void {
   }
