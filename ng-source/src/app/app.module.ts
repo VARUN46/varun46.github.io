@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -10,8 +9,8 @@ import { NavigationComponent } from './sections/navigation/navigation.component'
 import { FooterComponent } from './sections/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoaderComponent } from './sections/loader/loader.component';
-import { ImageOverlaySectionComponent } from './sections/image-overlay-section/image-overlay-section.component';
 import { SkillsDictionaryComponent } from './sections/skills-dictionary/skills-dictionary.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,12 +22,12 @@ import { SkillsDictionaryComponent } from './sections/skills-dictionary/skills-d
     FooterComponent,
     NotFoundComponent,
     LoaderComponent,
-    ImageOverlaySectionComponent,
     SkillsDictionaryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent,NavigationComponent,FooterComponent]

@@ -1,0 +1,15 @@
+.varun-navbar{
+  font-weight: bolder;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  background: #000;
+  border-bottom:1px solid rgb(200,200,200);
+}
+
+.varun-navbar .nav-link,
+.varun-navbar .navbar-brand,
+.varun-navbar .btn{
+  color:#FFF;
+
+}
