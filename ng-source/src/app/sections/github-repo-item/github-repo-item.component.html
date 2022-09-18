@@ -1,1 +1,7 @@
-<p>github-repo-item works!</p>
+<a class="repo-item" [href]="githubRepoItem.html_url">
+<div class="card">
+  <h2>{{githubRepoItem.name}}</h2>
+  <p>{{githubRepoItem.description}}</p>
+  <p>Language: {{githubRepoItem.language}}</p>
+</div>
+</a>

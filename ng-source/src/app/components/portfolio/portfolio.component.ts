@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { githubRepo } from 'src/app/entities/githubRepo';
 import { GithubService } from 'src/app/services/github/github.service';
 
 @Component({
@@ -8,7 +10,20 @@ import { GithubService } from 'src/app/services/github/github.service';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor(public githubService:GithubService) { }
+  githubItems: Observable<githubRepo[]> = of([]);
+
+  constructor(public githubService:GithubService) {
+    try {
+      this.githubService.getAllRepos().subscribe(items=>{
+        this.githubItems = of(items);
+      });
+    } catch (error) {
+      this.githubService.getAllReposFallback().subscribe(items=>{
+        this.githubItems = of(items);
+      });
+    }
+
+   }
 
   ngOnInit(): void {
   }
