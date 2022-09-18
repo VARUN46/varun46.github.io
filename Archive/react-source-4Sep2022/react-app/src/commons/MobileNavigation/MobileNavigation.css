@@ -1,4 +1,4 @@
-#mobile-navigation-ham{
+.mobile-navigation-ham{
     width:70px;
     height:70px;
     border: 1px solid #000;
@@ -10,7 +10,7 @@
     background: #FFF;
 }
 
-#mobile-navigation-ham .bar{
+.mobile-navigation-ham .bar{
     position: relative;
     width:80%;
     left:10%;
@@ -19,25 +19,34 @@
     margin-top:10px;
 }
 
-#mobile-navigation-list{
+.mobile-navigation-list{
     position: fixed;
-    left:0;
     background: #FFF;
     z-index: 999;
     width:400px;
     height:100%;
+    max-width:90%;
     overflow: auto;
     box-shadow: 2px 2px 2px rgb(200,200,200);
 }
+.hideNav{
+    left:-100%;
+    transition: left 1s;
+}
 
-#mobile-navigation-list a{
+.showNav{
+    left: 0;
+    transition: left 0.5s;
+}
+
+.mobile-navigation-list a{
     display: block;
     color:#000;
     font-size: 2rem;
     margin-top:30px;
 }
 
-#close-mobile-navigation{
+.close-mobile-navigation{
     position: absolute;
     right:10px;
     top:10px;

@@ -3,14 +3,15 @@ import {
     Link
   } from "react-router-dom";
 import MobileNavigationHam from "./MobileNavigationHam";
-import { useState } from 'react';
+import React, {  useState } from 'react';
 import { ImCross } from 'react-icons/im';
 
 function MobileNavigation(){
    
   const [showNav,setShowNav] = useState(false);
-  const componentBody = <ul id="mobile-navigation-list" className="nav flex-column">
-    <div onClick={()=>setShowNav(false)} id="close-mobile-navigation"><ImCross/></div>
+  const componentBody = <ul className={((showNav && 'showNav') || 'hideNav') +' nav flex-column mobile-navigation-list'}>
+
+    <div onClick={()=>setShowNav(false)} className="close-mobile-navigation"><ImCross/></div>
   <li className="nav-item">
     <Link className="nav-link" to="/">About</Link>
   </li>
@@ -21,13 +22,12 @@ function MobileNavigation(){
   <Link className="nav-link" to="/contact">Contact</Link>
   </li>
 </ul>
- ; 
+ ;
    return (
       <>
-      <span onClick={()=>setShowNav(true)}>
-      {!showNav && <MobileNavigationHam/>}
-      </span>
-      {showNav && componentBody}
+      {!showNav && <span onClick={()=>setShowNav(true)}>
+    <MobileNavigationHam/></span>}
+    {componentBody}
       </>
     );
 }
