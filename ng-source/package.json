@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build -o ../../varun46.github.io",
+    "build": "ng build --output-path ../Archive/ng_app_Live",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
