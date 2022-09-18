@@ -1,5 +1,7 @@
 <div class="container portfolio-container">
 <h2>Github Projects</h2>
 <hr/>
+<div class="github-repo-items-wrapper">
 <app-github-repo-item *ngFor="let item of (githubItems | async)" [githubRepoItem]="item"></app-github-repo-item>
+</div>
 </div>

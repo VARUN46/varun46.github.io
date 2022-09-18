@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { githubRepo } from 'src/app/entities/githubRepo';
 import { GithubService } from 'src/app/services/github/github.service';
+import { gsap, Back, Power1 } from 'gsap'
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css']
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent implements OnInit,AfterViewInit {
 
   githubItems: Observable<githubRepo[]> = of([]);
 
@@ -24,6 +25,9 @@ export class PortfolioComponent implements OnInit {
     }
 
    }
+  ngAfterViewInit(): void {
+    gsap.to(".github-repo-items-wrapper", { duration:5, opacity:1 });
+  }
 
   ngOnInit(): void {
   }

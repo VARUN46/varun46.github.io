@@ -13,12 +13,20 @@ export class GithubService implements Igithubservice{
 
   constructor(private http:HttpClient) { }
 
+  /**
+   *
+   * @returns github repository items list from fallback file
+   */
   getAllReposFallback(): Observable<githubRepo[]> {
     return this.http.get<githubRepo[]>(environment.githubProfileApiUrlFallback).pipe(
       tap(c=>c.filter(item=>item.fork==false))
     );
   }
 
+  /**
+   *
+   * @returns github repository items list from github api
+   */
   getAllRepos() : Observable<githubRepo[]>{
     return this.http.get<githubRepo[]>(environment.githubProfileApiUrl).pipe(
         tap(c=>c.filter(item=>item.fork==false))
