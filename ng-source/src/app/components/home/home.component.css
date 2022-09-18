@@ -22,3 +22,17 @@
   margin-top:20px;
   opacity: 0;
 }
+
+@media all and (max-width:786px){
+  .content{
+    font-size: 15px;
+  }
+  .content .ul li,
+  .connect-links{
+    opacity: 1;
+  }
+
+  .content .ul{
+    text-align: center;
+  }
+}

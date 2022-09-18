@@ -10,12 +10,15 @@ export class HomeComponent implements OnInit,AfterViewInit {
 
   constructor() { }
   ngAfterViewInit(): void {
-    let timeline = gsap.timeline();
-    timeline.to(".content .fsd", {rotation: 0, y: 100, duration: 1,opacity:1})
-    .to(".content .cc", {rotation: 0, y: 150, duration: 3,opacity:1})
-    .to(".content .f", {rotation: 0, y: 200, duration: 5,opacity:1});
-    gsap.to(".portfolio-img-wrapper img",{ x:100, duration:10,opacity:0.5 });
-    gsap.to(".connect-links", { duration:12, opacity:1 });
+    if(window.outerWidth>786)
+    {
+      let timeline = gsap.timeline();
+      timeline.to(".content .fsd", {rotation: 0, y: 100, duration: 1,opacity:1})
+      .to(".content .cc", {rotation: 0, y: 150, duration: 3,opacity:1})
+      .to(".content .f", {rotation: 0, y: 200, duration: 5,opacity:1});
+      gsap.to(".portfolio-img-wrapper img",{ x:100, duration:10,opacity:0.5 });
+      gsap.to(".connect-links", { duration:12, opacity:1 });
+    }
   }
 
   ngOnInit(): void {
