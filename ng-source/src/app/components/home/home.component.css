@@ -1,0 +1,38 @@
+.content{
+  padding-top:50px;
+  color:#FFF;
+  font-size:3rem;
+}
+
+.portfolio-img-wrapper{
+  overflow: hidden;
+  max-height: 700px;
+}
+
+.content .ul{
+  text-align: right;
+  list-style: none;
+}
+
+.content .ul li{
+  opacity: 0;
+}
+
+.connect-links{
+  margin-top:20px;
+  opacity: 0;
+}
+
+@media all and (max-width:786px){
+  .content{
+    font-size: 15px;
+  }
+  .content .ul li,
+  .connect-links{
+    opacity: 1;
+  }
+
+  .content .ul{
+    text-align: center;
+  }
+}
