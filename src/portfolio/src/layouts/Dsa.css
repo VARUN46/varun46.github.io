@@ -1,0 +1,20 @@
+.dsa-intro-page{
+    margin-top:10px;
+    text-align: left;
+}
+
+.dsa-intro-page .navigation-link{
+    text-align: justify;
+}
+
+.blog-page{
+    position: absolute;
+    width:80%;
+    height: 100%;
+    background: #FFF;
+    text-align: justify;
+}
+
+.blog-page h2{
+    font-size: medium;
+}
