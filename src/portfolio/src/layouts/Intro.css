@@ -1,0 +1,28 @@
+.intro-info{
+    padding-top: 30px;
+    
+}
+
+.intro-info h1,
+.intro-info h2,
+.intro-info h3{
+    line-height: 100px;
+}
+
+.intro-info .intro-pic{
+    max-width: 400px;
+}
+
+.intro-info .profile-cta{
+    display: block;
+    padding: 10px;
+    margin-top: 50px;
+    text-decoration: none;
+    color:#FFF;
+    width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,21,121,0.7792366946778712) 35%);
+}
