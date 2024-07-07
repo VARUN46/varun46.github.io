@@ -1,6 +1,7 @@
 .dsa-intro-page{
     text-align: left;
     background: #FFF;
+    padding:20px;
 }
 
 .dsa-intro-page .navigation-link{
@@ -10,6 +11,7 @@
 .blog-page{
     background: #FFF;
     text-align: justify;
+    padding:30px;
 }
 
 .blog-page h2{
