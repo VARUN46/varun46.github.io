@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-  background-color: #0093E9;
-background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
 }
 
 .App-logo {
@@ -40,10 +37,29 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   }
 }
 
+.navigation-header{
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background: #FFF;
+}
+
+.navigation-header .nav-show-action{
+  position: absolute;
+  left: 10px;
+  margin-top:10px;
+  font-size: large;
+  cursor: pointer;
+}
+
 .navigation{
   box-shadow: 2px 2px 2px rgb(200,200,200);
   height: 100vh;
   background: #fff;
+  width:300px;
+  position: fixed;
+  left:0;
+  top:0;
 }
 
 .navigation-link{
@@ -61,4 +77,8 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   background: rgb(240,240,240);
   opacity: 0.9;
   transition: 1s all;
+}
+
+.content-wrapper{
+  height: 100vh;
 }

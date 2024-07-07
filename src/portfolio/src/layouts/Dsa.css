@@ -1,9 +1,6 @@
 .dsa-intro-page{
     text-align: left;
     background: #FFF;
-    height: 100vh;
-    overflow: scroll;
-    padding-left:5%;
 }
 
 .dsa-intro-page .navigation-link{
@@ -11,12 +8,8 @@
 }
 
 .blog-page{
-    position: absolute;
-    height: 95%;
     background: #FFF;
     text-align: justify;
-    padding:30px;
-    overflow: scroll;
 }
 
 .blog-page h2{
