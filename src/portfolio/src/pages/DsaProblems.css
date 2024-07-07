@@ -1,0 +1,18 @@
+.dsa-page-content{
+    background: #fff;
+    padding: 20px;
+}
+
+.code-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+pre {
+    white-space: pre-wrap; /* Preserve formatting */
+    font-size: 16px;
+    margin: 0;
+}
+

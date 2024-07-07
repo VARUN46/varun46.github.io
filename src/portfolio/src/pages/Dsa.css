@@ -1,0 +1,32 @@
+.dsa-intro-page{
+    text-align: left;
+    background: #FFF;
+    padding:20px;
+}
+
+.dsa-intro-page .navigation-link{
+    text-align: justify;
+}
+
+.blog-page{
+    background: #FFF;
+    text-align: justify;
+    padding:30px;
+}
+
+.blog-page h2{
+    font-size: medium;
+}
+
+.code-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+pre {
+    white-space: pre-wrap; /* Preserve formatting */
+    font-size: 16px;
+    margin: 0;
+}

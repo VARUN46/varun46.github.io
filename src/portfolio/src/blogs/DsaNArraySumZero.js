@@ -9,7 +9,7 @@ function DsaNArraySumZero(){
     <h2>Key Topics : Basic programming, Hashsets</h2>
     <h2>Code : </h2>
     <br/>
-    <code class="code-container"><pre>{`import random
+    <code className="code-container"><pre>{`import random
 
 class Solution:
     def unique_n_array_sum_zero(self, n):
