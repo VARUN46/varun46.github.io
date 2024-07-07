@@ -10,6 +10,7 @@ import {
 import NotFound from './pages/NotFound';
 import Intro from './pages/Intro';
 import Dsa from './pages/Dsa';
+import DsaProblems from './pages/DsaProblems';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createHashRouter([
@@ -25,6 +26,10 @@ const router = createHashRouter([
       {
         path:'blog',
         element: <Dsa/>,
+      },
+      {
+        path:'blog/dsa/:slug',
+        element: <DsaProblems/>
       }
     ]
   },
