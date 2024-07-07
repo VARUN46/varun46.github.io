@@ -18,8 +18,8 @@ function App() {
     <div className={`navigation ${showNav ? 'navigation-visible' : ''}` }>
     <IoMdClose onClick={ () => { setShowNav(false); }} />
 
-      <Link to = {`about`} className="navigation-link">Introduction</Link>
-      <Link to = {`blog`} className="navigation-link">DSA Articles</Link>
+      <Link to = {`about`} className="navigation-link">About</Link>
+      <Link to = {``} className="navigation-link">DSA Articles</Link>
     </div>
     <div className="content-wrapper">
       <Outlet/>

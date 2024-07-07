@@ -17,7 +17,7 @@ function Dsa(){
 
 return (<>
       <div className="dsa-intro-page">
-        <h2>Welcome to my DSA problems and solution</h2>
+        <h2>DSA: Problems and Solutions</h2>
         <p>Below are a few tricky and few my favourite problems, they might help you crack the interview.</p>
        {links}
         </div>

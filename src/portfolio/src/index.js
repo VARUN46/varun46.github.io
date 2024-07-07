@@ -24,8 +24,8 @@ const router = createHashRouter([
         element: <Intro/>
       },
       {
-        path:'blog',
-        element: <Dsa/>,
+        index: true,
+        element: <Dsa/>
       },
       {
         path:'blog/dsa/:slug',
