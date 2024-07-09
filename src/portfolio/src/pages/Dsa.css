@@ -18,6 +18,12 @@
     font-size: medium;
 }
 
+.blog-links a{
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
 .code-container {
     background-color: #fff;
     border-radius: 5px;
