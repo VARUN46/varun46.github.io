@@ -10,17 +10,15 @@ jobs:
     Build_Project:
         runs-on: ubuntu-latest
         steps:
-            - name: Check out repository code
-              uses: actions/checkout@v4
-            - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+         - name: Check out repository code
+           uses: actions/checkout@v4
+         - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
             
-            - name: Download node
-            - uses: actions/setup-node@v4
-              with:
-                node-version: 'latest'
+         - uses: actions/setup-node@v4
+           with:
+            node-version: 'latest'
             
-            - name: Install packages and Build project
-            - run: |
+         - run: |
                 cd src/portfolio 
                 npm install
                 npm run build
