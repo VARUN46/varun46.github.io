@@ -19,7 +19,7 @@ return (<>
       <div className="dsa-intro-page">
         <h2>DSA: Problems and Solutions</h2>
         <p>Below are a few tricky and few my favourite problems, they might help you crack the interview.</p>
-       {links}
+       <div className="blog-links">{links}</div>
         </div>
         </>);
 }
