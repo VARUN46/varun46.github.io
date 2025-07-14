@@ -1,0 +1,80 @@
+/* App.css */
+
+.App {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: gradientBackground 15s ease infinite;
+    background: linear-gradient(-45deg, #00c6ff, #0072ff, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Intro {
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #f0f8ff; /* AliceBlue — soft on eyes, high contrast */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: #e0ffff; /* LightCyan — cool and readable */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.ContactButton {
+    background-color: #00c6ff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+    text-decoration: none;
+}
+
+.ContactButton:hover {
+    background-color: #0072ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 114, 255, 0.7);
+}

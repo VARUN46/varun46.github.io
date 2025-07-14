@@ -1,0 +1,11 @@
+{
+  "short_name": "Varun Setia - Full Stack Developer | IT Consultant | Technical Writer - Websites | Generative AI Systems | Mobile Apps",
+  "name": "Varun Setia - Full Stack Developer | IT Consultant | Technical Writer - Websites | Generative AI Systems | Mobile Apps",
+  "icons": [
+
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
